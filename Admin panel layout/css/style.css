@@ -69,6 +69,8 @@ a:focus {
 
 /* sidebar */
 
+/* sidebar */
+
 #wrapper {
   padding-left: 70px;
   transition: all .4s ease 0s;
@@ -76,7 +78,7 @@ a:focus {
 }
 
 #sidebar-wrapper {
-  margin-left: -170px;
+  margin-left: -150px;
   top: 0;
   left: 70px;
   width: 150px;
@@ -106,7 +108,7 @@ a:focus {
   width: 150px;
   list-style: none;
   margin: 0;
-  padding-left: 10px;
+  padding: 0;
 }
 
 .page-content-wrapper {
@@ -166,13 +168,13 @@ a:focus {
 
 #main_icon {
   float: right;
-  padding-right: 25px;
+  padding-right: 15px;
   padding-top: 20px;
 }
 
 .sub_icon {
   float: right;
-  padding-right: 25px;
+  padding-right: 15px;
   padding-top: 10px;
 }
 
