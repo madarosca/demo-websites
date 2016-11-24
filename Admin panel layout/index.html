@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Demo Admin Panel</title>
+		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/buttons.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+	<!-- Top navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		  <div class="nav-container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Menu 1</a></li>
+		        <li><a href="#">Menu 2</a></li>
+		        <li><a href="#">Menu 3</a></li>
+		        <li><a href="#">Menu 4</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Profile<span class="caret"></span></a>
+		          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.nav-container-fluid -->
+		</nav>
+		<div id="wrapper" class="active">
+		  <!-- Sidebar -->
+		  <div id="sidebar-wrapper">
+		    <ul id="sidebar_menu" class="sidebar-nav active">
+		        <li class="sidebar-brand">
+		          <a href="/" id="logo">LOGO
+		          </a>
+		        </li>
+		        <li class="sidebar-brand">
+		          <a id="menu-toggle">Menu
+		            <span id="main_icon" class="glyphicon glyphicon-align-justify"></span>
+		          </a>
+		        </li>
+		    </ul>
+		    <ul class="sidebar-nav" id="sidebar" role="navigation">     
+		      <li><a class="active" href="#">Link1<span class="sub_icon glyphicon glyphicon-file"></span></a></li>
+		      <li><a href="#">link2<span class="sub_icon glyphicon glyphicon-signal"></span></a></li>
+		      <li><a href="#">Link3<span class="sub_icon glyphicon glyphicon-file"></span></a></li>
+		      <li><a href="#">link4<span class="sub_icon glyphicon glyphicon-signal"></span></a></li>
+		      <li><a href="#">Link5<span class="sub_icon glyphicon glyphicon-file"></span></a></li>
+		      <li><a href="#">link6<span class="sub_icon glyphicon glyphicon-signal"></span></a></li>
+		    </ul>
+		  </div>
+	      <!-- Page content -->
+	      <div class="page-content-wrapper col-md-12">
+		    <!-- Keep all page content within the page-content inset div! -->
+		    <div class="page-content inset">
+				<div class="row">
+					<div class="col-md-12">
+						<div>This is the home page.</div>
+						<br>
+						<div><a href="#" class="btn btn-primary gradient btn-sm pull-left">OK!</a>
+					    </div>
+					</div>
+				</div>
+			</div>
+		  </div>
+    </div>
+</body>
+<script type="text/javascript">
+	$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("active");
+});
+</script>
+</html>
