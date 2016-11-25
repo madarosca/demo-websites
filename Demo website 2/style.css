@@ -1,7 +1,3 @@
-html {
-	overflow-x:hidden !important;
-}
-
 body, html {
 	height:auto !important:;
 }
@@ -13,63 +9,103 @@ body {
 
 }
 
+/* top-navbar */
 
-
-.navbar-collapse.collapse {
-    display: block!important;
-    height: auto!important;
-    padding-bottom: 0;
-    overflow: visible!important;
+.navbar {
+    margin-bottom: 0 !important;
+    border: none !important;
+    z-index: 1100;
+    background: transparent !important;
+    box-shadow: 0 5px 15px #00173d;
+    border-radius: 0px !important;
 }
 
-.navbar-top {
-    min-height: 90px;
+.nav-container-fluid {
+    background: transparent;
 }
 
-.navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
+.navbar-default .navbar-nav>li>a {
+  color: #ddd !important;
+  text-align: center;
 }
 
-.navbar-fixed-bottom, .navbar-fixed-top {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+.navbar-default .nav>li>a:focus, 
+.nav>li>a:hover {
+  background-color: transparent !important;
+  color: #ddd !important;
+  text-decoration: none !important;
+  transition: all 1s ease 0s;
+  box-shadow: 0 5px 15px #00173d;
 }
 
-.ha-waypoint {
-    background-color: #020621;
-    width: 100%;
-    min-height: 80px;
+a:focus {
+  outline: none !important;
+  outline-offset: 0 !important;
 }
 
-.navbar-top .container {
-    max-width: 1170px;
-    margin: auto;
+.navbar-toggle {
+  background-color: transparent !important;
+  border: 0 !important;
+  padding: 10px 10px !important;
 }
 
-.container, .container-fluid {
-    padding-left: 15px;
-    padding-right: 15px;
+.navbar-default .navbar-toggle {
+  border: none !important;
 }
 
-.row {
-    margin-left: -15px;
-    margin-right: -15px;
+@media (min-width: 768px) {
+.navbar-nav {
+    float: right !important;
+    margin: 0;
+    }
 }
 
-.navbar-header {
-    float: left;
+.navbar-collapse {
+  border-top: none !important;
 }
 
-.navbar-collapse .collapse {
-    display: block!important;
-    height: auto!important;
-    padding-bottom: 0;
-    overflow: visible!important;
-    max-height: 340px;
+.open>.dropdown-menu {
+  display: block;
+  background: transparent;
+  border-radius: 0;
+  border: none !important;
+  box-shadow: 0 5px 15px #00173d;
 }
+
+.dropdown-menu>li>a {
+  color: #ddd !important;
+}
+
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover {
+  background-color: transparent !important;
+  transition: all 1s ease 0s;
+  box-shadow: 0 0.5px 15px #00173d;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #ddd !important;
+    background-color: transparent !important;
+    box-shadow: 0 5px 15px #00173d;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+    box-shadow: 0 5px 15px #00173d;
+}
+
+.navbar-brand {
+    float: left !important;
+    padding: 5px 10px !important;
+}
+
+#logo {
+    max-width: 80%;
+}
+
+/* content */
 
 .m-l-5 {
     margin-left: 5px;
@@ -83,9 +119,7 @@ body {
     margin-top: 25px;
 }
 
-.pull-right {
-    float: right!important;
-}
+
 
 .btn {
     display: inline-block;
@@ -101,35 +135,9 @@ body {
     user-select: none;
 }
 
-.navbar-top .container .compressed .navbar-collapse .nav li a {
-    padding: 0;
-    font-size: 14px;
-    font-family: "Open Sans";
-    font-weight: 400;
-}
 
-.navbar-top .container .compressed .navbar-collapse .nav {
-    transition: all .3s ease-in-out;
-    margin-top: 20px;
-}
 
-.navbar-nav {
-    margin: 0;
-}
 
-.nav {
-    padding-left: 0;
-    list-style: none;
-}
-
-.navbar-brand {
-    float: left;
-    height: 50px;
-    padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px;
-    margin-left: -15px;
-}
 
 .m-l-5 {
     margin-left: 5px;
@@ -149,42 +157,11 @@ ul, menu, dir {
     -webkit-padding-start: 40px;
 }
 
-.nav>li, .nav>li>a {
-    display: block;
-    position: relative;
-
-}
-
 a {
     text-decoration: none;
     background-color: transparent;
     cursor: auto;
 
-}
-
-.navbar-top .container .compressed .navbar-collapse .nav li a:hover {
-    background: 0 0;
-    color: #83cbf1;
-}
-
-.navbar-top .container .compressed .navbar-collapse .nav li {
-    padding: 15px 10px;
-}
-
-.navbar-nav>li {
-    float: left !important;
-}
-
-*, :after, :before {
-    box-sizing: border-box;
-}
-
-.collapse {
-    display: none;
-}
-
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
 }
 
 body .home .parallax {
@@ -197,14 +174,22 @@ body .home .parallax {
     margin-top: -100px;
 }
 
+@media (max-width: 768px) {
+    .banner {
+    background: url(img/bluesky.jpg) no-repeat #02061b;
+    height: 250px;
+    margin-top: 0px;
+}
+}
+
 .banner {
     background: url(img/bluesky.jpg) no-repeat #02061b;
 	min-height: 168px;
-	height: 200px;
+	height: 250px;
+    margin-top: -50px;
 }
 
 body .home .banner {
-    margin-top: 55px;
     text-align: center;
     position: relative;
     -webkit-box-shadow: 0 10px 0 0 #e6e6e6;
@@ -214,7 +199,7 @@ body .home .banner h1 {
     text-align: center;
     color: #fff;
     font-size: 36px;
-    padding: 50px 15px 10px;
+    padding: 100px 15px 10px;
     margin: 0;
     font-weight: 700;
     text-shadow: 0 0 30px #fff;
@@ -314,6 +299,18 @@ p {
     margin: 0 0 10px;
 }
 
+.section-1-ul li {
+    text-align: center !important;
+    padding-left: 0 !important;
+}
+
+
+.col-xs-12 {
+    width: 100%;
+    padding: 0 !important;
+}
+
+
 .col-lg-8 {
     width: 33.33333333% !important;
 }
@@ -340,8 +337,6 @@ body .home .content .section_bg .one_platform_bg {
     background: url(img/bluesky.jpg) center no-repeat fixed;
     background-size: 100%;
 }
-
-
 
 footer .top, footer .top h1 {
     text-align: center;
@@ -489,7 +484,7 @@ body .home .content .section_bg .one_platform_bg .one_platform ul li {
     font-family: 'Open Sans';
     color: #002bdb;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
     text-shadow: 1px 0px 1px #fff;
 }
 
@@ -511,8 +506,14 @@ body .home .content .section_bg .one_platform_bg .one_platform ul li {
 }
 
 .carousel {
-    width: 50%;
+    width: 70%;
     margin: auto;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+    min-width: 90%;
+    }
 }
 
 .carousel_1 {
