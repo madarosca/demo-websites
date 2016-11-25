@@ -59,7 +59,7 @@
 		        </li>
 		        <li class="sidebar-brand">
 		          <a id="menu-toggle">Menu
-		            <span id="main_icon" class="glyphicon glyphicon-align-justify"></span>
+		            <span id="main_icon" class="glyphicon glyphicon-chevron-left"></span>
 		          </a>
 		        </li>
 		    </ul>
@@ -92,6 +92,7 @@
 	$("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("active");
+    $("#main_icon").toggleClass("glyphicon-chevron-right glyphicon-chevron-left");
 });
 </script>
 </html>
