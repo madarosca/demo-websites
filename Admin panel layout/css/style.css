@@ -63,13 +63,19 @@ a:focus {
     background-color: #4a4b4c !important;
 }
 
+/* sidebar */
+
 #logo {
   max-width: 70%; 
 }
 
-/* sidebar */
+.smaller {
+  width: 20%;
+}
 
-/* sidebar */
+a#logo {
+  margin-left: -15px;
+}
 
 #wrapper {
   padding-left: 70px;
