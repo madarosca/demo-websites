@@ -63,6 +63,30 @@ a:focus {
     background-color: #4a4b4c !important;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none !important;
+  border-color: #000 !important;
+}
+
+@media (min-width: 768px) {
+.navbar-nav {
+    float: right !important;
+  }
+}
+
+@media (max-width: 768px) {
+.navbar-collapse.collapse.in ul li a {
+  text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+.nav>li {
+  text-align: center;
+  padding-left: 35px;
+  }
+}
+
 /* sidebar */
 
 #logo {
@@ -204,10 +228,6 @@ a#logo {
   left: 150px;
   width: 150px;
   transition: all .4s ease 0s;
-}
-
-.navbar-collapse {
-  border-top: none;
 }
 
 /* content */

@@ -28,7 +28,6 @@ body {
 	height: 200px;
 	text-align: center;
 	font-size: 1.2rem;
-	font-size: 1.1vw;
 	border: solid 1px #ddd;
 	border-collapse: collapse;
 	padding-top: 100px;
@@ -108,6 +107,7 @@ body {
 
 .content {
 	padding: 0 45px 0 45px;
+	font-size: 1.2vw;
 }
 
 #nav {
@@ -121,7 +121,7 @@ body {
 
 #nav p {
 	margin: 0 !important;
-	font-size: 1vw;
+	font-size: 1rem;
 }
 
 .team {

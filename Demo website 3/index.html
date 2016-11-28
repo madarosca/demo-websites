@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Demo website</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit">
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+<body>
+    <div class="main-wrapper">
+        <!-- navbar -->
+        <nav class="navbar navbar-default mega trans-helper navbar-trans navbar-trans-dark" role="navigation">
+          <div class="nav-container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="img/logo.gif" id="logo"></img></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+                <li><a href="#">Menu 5</a></li>
+                <li><a href="#">Menu 6</a></li>
+                <li><a href="#">Menu 7</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.nav-container-fluid -->
+        </nav>
+        <!-- end navbar -->
+        <div class="bg-overlay">
+            <div class="overlay-content">
+                <h1 class="h-large">Created<br>for creatives</h1>
+                <h4 class="h-subheading">Multipage & onepage HTML5 templates</h4>
+                <a href="#" class="btn btn-overlay">Learn more</a>
+            </div>
+            <div class="scroll">
+                <a href="#">
+                    <span id="scroll-text">scroll down</span>
+                    <br>
+                    <span id="scroll-icon" class="glyphicon glyphicon-circle-arrow-down"></span>
+                </a>
+                
+            </div>
+        </div><!-- end bg-overlay -->
+        <div class="intro">
+            
+        </div>
+    </div><!-- main-wrapper -->
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#scroll-icon").hover(
+            function() {
+                $("#scroll-text").fadeIn("slow");
+            },
+            function() {
+                $("#scroll-text").fadeOut("slow");
+            });
+
+    })
+</script>
+
+</html>
