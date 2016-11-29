@@ -10,13 +10,14 @@
         <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
         <link href="css/style.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="js/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
 <body>
     <div class="main-wrapper">
         <!-- navbar -->
-        <nav class="navbar navbar-default mega trans-helper navbar-trans navbar-trans-dark" role="navigation">
+        <nav class="navbar navbar-default" role="navigation">
           <div class="nav-container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -44,10 +45,10 @@
         </nav>
         <!-- end navbar -->
         <div class="bg-overlay">
-            <div class="overlay-content">
-                <h1 class="h-large">Created<br>for creatives</h1>
-                <h4 class="h-subheading">Multipage & onepage HTML5 templates</h4>
-                <a href="#" class="btn btn-overlay">Learn more</a>
+            <div class="overlay-content animation-element slide-left introduction">
+                    <h1 class="h-large">Created<br>for creatives</h1>
+                    <h4 class="h-subheading">Multipage & onepage HTML5 templates</h4>
+                    <a href="#" class="btn btn-overlay">Learn more</a>
             </div>
             <div class="scroll">
                 <a href="#intro">
@@ -55,7 +56,6 @@
                     <br>
                     <span id="scroll-icon" class="glyphicon glyphicon-circle-arrow-down"></span>
                 </a>
-                
             </div>
         </div><!-- end bg-overlay -->
         <div class="spacing-1"></div>
@@ -65,8 +65,20 @@
             <br>
             <p class="g-txt-par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
         </div>
+        <div id="presentation" class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10">
+        <img src="img/presentation.png">
+        </div>
+        <div id="services" class="col-md-12">
+            <div class="sec-header col-md-offset-2 col-md-8 text-center">
+                <h3 class="b-title">What we do</h3>
+                <h4 class="g-txt">Lorem ipsum dolor sit amet consectetur</h4>
+                
+            </div>
+        </div>
     </div><!-- main-wrapper -->
 </body>
+
+
 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -76,9 +88,39 @@
             },
             function() {
                 $("#scroll-text").fadeOut("slow");
-            });
-
+        });
     })
+</script>
+
+<script type="text/javascript">
+//Cache reference to window and animation items
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
+$window.on('scroll', check_if_in_view);
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
 </script>
 
 </html>
