@@ -16,12 +16,11 @@ body {
     border: none !important;
     z-index: 1100;
     background: transparent !important;
-    box-shadow: 0 5px 15px #00173d;
     border-radius: 0px !important;
 }
 
 .nav-container-fluid {
-    background: #193277;
+    background: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -44,13 +43,28 @@ a:focus {
 }
 
 .navbar-toggle {
-  background-color: #193277 !important;
+  background-color: transparent;
   border: 0 !important;
   padding: 10px 10px !important;
+  box-shadow: 0 5px 15px #00173d;
 }
 
 .navbar-default .navbar-toggle {
   border: none !important;
+}
+
+.navbar-toggle:hover {
+    background-color: transparent !important;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+.navbar-collapse {
+    background-color: #183a91;
+    }
+.navbar-header {
+    background-color: #183a91;
+    }
 }
 
 @media (min-width: 768px) {
@@ -66,7 +80,7 @@ a:focus {
 
 .open>.dropdown-menu {
   display: block;
-  background: #193277;
+  background: transparent;
   border-radius: 0;
   border: none !important;
   box-shadow: 0 5px 15px #00173d;
@@ -98,6 +112,7 @@ a:focus {
 
 .navbar-brand {
     float: left !important;
+    width: 150px;
     padding: 5px 10px !important;
 }
 
@@ -161,15 +176,21 @@ body .home .parallax {
 .banner {
     background: url(img/bluesky.jpg) no-repeat #02061b;
 	min-height: 168px;
-	height: 250px;
-    margin-top: -50px;
+	height: 350px;
+    margin-top: -50px !important;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 @media (max-width: 768px) {
     .banner {
     background: url(img/bluesky.jpg) no-repeat #02061b;
     height: 250px;
-    margin-top: 0px;
+    margin-top: 0px !important;
+    }
+
+    .banner h1 {
+        padding-top: 50px !important;
     }
 }
 
@@ -187,7 +208,7 @@ body .home .banner h1 {
     text-align: center;
     color: #fff;
     font-size: 36px;
-    padding: 100px 15px 10px;
+    padding: 150px 15px 10px;
     margin: 0;
     font-weight: 700;
     text-shadow: 0 0 30px #fff;
@@ -310,8 +331,9 @@ body .home .content .section_bg .section .boxes .info-box {
 }
 
 body .home .content .section_bg .one_platform_bg {
-    background: url(img/bluesky.jpg) center no-repeat fixed;
-    background-size: 100%;
+    background: url(img/carousel_img_4.jpg) center no-repeat fixed;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer .top, footer .top h1 {
@@ -430,6 +452,11 @@ body .home .content .section_bg .one_platform_bg .one_platform ul li {
     text-shadow: 1px 0px 1px #fff;
 }
 
+.section_plus {
+    text-align: center;
+    padding: 20px;
+}
+
 .m-b-50 {
     margin-bottom: 50px !important;
 }
@@ -468,7 +495,8 @@ body .home .content .section_bg .one_platform_bg .one_platform ul li {
 
 footer .top {
     background: url(img/pinksky.jpg) bottom no-repeat fixed #02061b;
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
     padding-top: 70px;
 }
 

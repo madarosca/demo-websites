@@ -167,3 +167,33 @@ a:focus {
   letter-spacing: 2.5px;
   text-transform: uppercase;
 }
+
+.spacing-1 {
+  padding-bottom: 120px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.b-title {
+  color: #111;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 2px #111;
+}
+
+.g-txt {
+  color: #999;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  line-height: 1.8em;
+  margin-top: 25px;
+}
+
+.g-txt-par {
+  color: #777;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 1.8em;
+  margin-top: 25px;
+}
