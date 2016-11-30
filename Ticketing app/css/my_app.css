@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+.title-text-strong {
+	font-weight: bold;
+}
+
+.logo {
+	width: 5%;
+    display: inline-block !important;
+}
+
+.gradient {
+	color: #255;
+}
+
+.btn {
+	color: white !important;
+}
+
+.error_msg {
+	margin: 0 15px !important;
+}
+
+.navbar-nav>li a.active {
+	background-color: #03084B !important;
+}
+
+ .top-menu
+{
+    font-weight: 500 !important;
+}
+
+.btn.btn-link {
+	color:#000 !important;
+}
+
+.panel_totals {
+	font-size: 16px !important;
+	color: #000;
+}
+
+.navbar .dropdown-menu li > a, .navbar.navbar-default .dropdown-menu li > a {
+    font-size: 14px !important;
+}
+.dropdown-menu>li>a {
+	padding: 3px 30px !important;
+}
+
+.dropdown-menu {
+	min-width: 100% !important;
+}
+
+.dropdown-menu>li>a:hover {
+	color: #050E7D !important;
+}
+
+.vertical-center {
+	margin-top: 15%;
+	display: flex !important;
+	align-items: center !important;
+	color: #ddd !important;
+}
+
+body.main-page {
+	background-color: #050E7D;
+}
+
+h1.main-page {
+	font-size: 4em;
+	font-weight: 900;
+}
+
+.panel_totals>a {
+	text-decoration: none !important;
+	color: black !important;
+}
+
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+	background-color: #050E7D !important;
+}
+
+.table-title {
+	padding: 10px !important;
+    font-weight: 500;
+    background: #eee;
+    margin-top: 10px;
+}
+
+.nav>li>a, .navbar-brand {
+	font-weight: 400;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 20px white inset !important;
+}
+
+.login-form {
+	border: 1px solid #ddd !important;
+	border-radius: 5px !important;
+}
+
+.forgot_pwd {
+	margin-left: 15% !important;
+}
+
+.selectpicker {
+	height: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.select_menu {
+	margin: 40px 0 10px -10px;
+}
+
+.pagination {
+	float: right;
+}
