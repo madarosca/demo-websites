@@ -403,6 +403,27 @@ a {
 	color: #01368c !important;
 }
 
+.carousel-indicators li {
+	background-color: #00003a  !important;
+	border: 1px solid #00003a  !important;
+}
+
+.carousel-caption {
+	color: #00003a  !important;
+	text-shadow: 0 1px 0px #ddd !important;
+	font-weight: 600;
+}
+
+.carousel-indicators, .carousel-caption {
+	bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+	.carousel-caption {
+		bottom: 10px !important;
+	}
+}
+
 .btn-default.gradient {
 	color: white !important;
 	border: none !important;
