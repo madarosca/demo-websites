@@ -5,6 +5,10 @@
 	font-weight: bold;
 }
 
+.btn {
+	margin: 0 !important;
+}
+
 .logo {
 	width: 5%;
     display: inline-block !important;
@@ -95,10 +99,6 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 20px white inset !important;
 }
 
-.login-form {
-	border: 1px solid #ddd !important;
-	border-radius: 5px !important;
-}
 
 .forgot_pwd {
 	margin-left: 15% !important;
