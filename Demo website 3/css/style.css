@@ -1,6 +1,6 @@
 body, html {
   color: #000 !important;
-  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
   font-size: 12px !important;
   margin: 0px;
   padding: 0px;
@@ -113,7 +113,7 @@ a:focus {
 .h-large {
   color: #383c46 !important;
   font-size: 6em !important;
-  font-weight: 900 !important;
+  font-weight: 800 !important;
   line-height: 1.2;
   letter-spacing: 2.5px;
   margin-top: 0px !important;
@@ -285,7 +285,7 @@ a:focus {
 
 .box_content {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.2px;
   line-height: 1.8em;
   color: #777;
@@ -293,7 +293,7 @@ a:focus {
 
 .box_link {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.2px;
   line-height: 1.8em;
   color: #777;
@@ -310,7 +310,7 @@ a:focus {
 .box_link>a:focus,
 .box_link>a:active {
   color: #000;
-  transition: all 1s ease 0s;
+  transition: all 0.5s ease 0s;
   text-shadow: 2px 2px 3px #7d7676;
 }
 
@@ -338,6 +338,10 @@ a:focus {
   .box_link {
     padding-top: 10px;
   }
+}
+
+#hide_me {
+  opacity:0;
 }
 
 

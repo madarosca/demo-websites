@@ -35,6 +35,8 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 600;
+	border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 .navbar-default .nav>li>a:focus, 
@@ -159,6 +161,7 @@ a:focus {
 	color: white;
 	margin-top: 20px;
 	text-align: center;
+	padding-top: 20px;
 }
 
 #nav p {
@@ -228,7 +231,7 @@ article {
 	background-repeat: round;
 	color: white;
 	text-align: center;
-	padding: 60px;
+	padding: 20px;
 }
 
 article p {
@@ -378,6 +381,45 @@ a {
 
 .carousel-control {
 	overflow: hidden !important;
+	background-image: none !important;
+}
+
+.carousel-control.right {
+	right: 30% !important;
+}
+
+.carousel-control.left {
+	left: 30% !important;
+}
+
+@media (max-width: 600px) {
+	.carousel-control.right {
+		right: 25% !important;
+	}
+
+	.carousel-control.left {
+		left: 25% !important;
+	}
+}
+
+@media (max-width: 460px) {
+	.carousel-control.right {
+		right: 20% !important;
+	}
+
+	.carousel-control.left {
+		left: 20% !important;
+	}
+}
+
+@media (max-width: 380px) {
+	.carousel-control.right {
+		right: 15% !important;
+	}
+
+	.carousel-control.left {
+		left: 15% !important;
+	}
 }
 
 #our_clients {
