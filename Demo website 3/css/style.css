@@ -403,12 +403,22 @@ a:focus {
 
 #mobile_friendly {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-#mobile_info_left {
-    visibility: visible;
-    animation-duration: 0.8s;
-    animation-name: fadeInRight;
+.mobile_title {
+	font-size: 1.3em;
+	font-weight: 600;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+}
+
+.mobile_content {
+	font-size: 1em;
+	font-weight: 400;
+	padding-bottom: 40px;
+	letter-spacing: 1.5px;
 }
 
 /*animation element sliding from left*/
