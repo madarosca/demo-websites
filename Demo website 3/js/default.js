@@ -1,12 +1,12 @@
-    $(document).ready(function(){
-        $("#scroll-icon").hover(
-            function() {
-                $("#scroll-text").fadeIn("slow");
-            },
-            function() {
-                $("#scroll-text").fadeOut("slow");
-        });
-    })
+$(document).ready(function(){
+    $("#scroll-icon").hover(
+        function() {
+            $("#scroll-text").fadeIn("slow");
+        },
+        function() {
+            $("#scroll-text").fadeOut("slow");
+    });
+})
 
 //Cache reference to window and animation items
 var $animation_elements = $('.animation-element');

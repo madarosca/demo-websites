@@ -10,6 +10,10 @@ a:hover, a:focus {
   text-decoration: none !important;
 }
 
+.clearfix {
+  clear:both;
+}
+
 /* top-navbar */
 
 .navbar {
@@ -201,6 +205,7 @@ a:focus {
   letter-spacing: 2.5px;
   line-height: 1.8em;
   margin-top: 25px;
+  text-transform: uppercase;
 }
 
 .g-txt-par {
@@ -344,6 +349,67 @@ a:focus {
   opacity:0;
 }
 
+#banner_section {
+  background: url(../img/sea.jpg);
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 350px;
+  padding: 0;
+}
+
+.section_overlay {
+  background-color: rgba(128, 128, 128, 0.52);
+  height: 350px;
+}
+
+.big_icon {
+  padding-top: 80px;
+}
+
+#icon2, #icon3, #icon4 {
+  max-width: 100px;
+}
+
+#icon1 {
+  max-width: 160px;
+}
+
+.sec_text {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 2px #111;
+  letter-spacing: 2.5px;
+}
+
+#icon1, #icon2, #icon3, #icon4 {
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s
+}
+
+#icon1:hover,
+#icon2:hover,
+#icon3:hover,
+#icon4:hover {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+    cursor: pointer;
+}
+
+#mobile_friendly {
+  padding-top: 50px;
+}
+
+#mobile_info_left {
+    visibility: visible;
+    animation-duration: 0.8s;
+    animation-name: fadeInRight;
+}
 
 /*animation element sliding from left*/
 
