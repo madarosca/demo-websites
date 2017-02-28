@@ -22,7 +22,7 @@ a:hover, a:focus {
   border: none !important;
   z-index: 1100;
   background: transparent !important;
-  box-shadow: 0 3px 10px #ddd;
+  box-shadow: 0 3px 10px #1186bd;
   border-radius: 0px !important;
 }
 
@@ -31,7 +31,7 @@ a:hover, a:focus {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #7a7b7c !important;
+  color: #010735 !important;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -41,10 +41,10 @@ a:hover, a:focus {
 .navbar-default .nav>li>a:focus, 
 .nav>li>a:hover {
   background-color: transparent !important;
-  color: #111 !important;
+  color: #fff !important;
   text-decoration: none !important;
   transition: all 1s ease 0s;
-  box-shadow: 0 3px 10px #bab9c7;
+  box-shadow: 0 3px 10px #1186bd;
 }
 
 a:focus {
@@ -101,7 +101,7 @@ a:focus {
 /* content */
 
 .bg-overlay {
-    background: url(../img/fog.jpg);
+    background: url(../img/blue_sky.jpg);
     position: relative;
     width: 100%;
     height: 100%;
@@ -118,7 +118,7 @@ a:focus {
 }
 
 .h-large {
-  color: #383c46 !important;
+  color: #001854 !important;
   font-size: 6em !important;
   font-weight: 800 !important;
   line-height: 1.2;
@@ -137,7 +137,7 @@ a:focus {
 }
 
 .h-subheading {
-  color: #383c46;
+  color: #001854;
   margin-top: 100px;
   margin-bottom: 30px;
   text-transform: uppercase;
@@ -145,7 +145,7 @@ a:focus {
 
 .btn-overlay {
   color: #ececec;
-  background: #5d606f;
+  background: #02115d;
   display: inline-block;
   text-decoration: none;
   position: relative;
@@ -159,9 +159,9 @@ a:focus {
   -webkit-transition: all 1s;
 }
 
-.btn-overlay:hover {
+.btn-overlay:hover, .btn-overlay:focus {
   color: #fff !important;
-  background: #000;
+  background: #0853da;
 }
 
 .scroll {
@@ -171,17 +171,17 @@ a:focus {
 
 #scroll-icon {
   font-size: 30px;
-  color: rgba(17, 17, 17, 0.58);
+  color: #0853da;
   margin-top: 10px;
 }
 
 #scroll-icon:hover {
-  color: #111;
+  color: #070782;
 }
 
 #scroll-text {
   display: none;
-  color: #111;
+  color: #070782;
   position: relative;
   text-align: center;
   padding-bottom: 30px;
@@ -200,14 +200,14 @@ a:focus {
 }
 
 .b-title {
-  color: #111;
+  color: #02004c;
   text-transform: uppercase;
-  text-shadow: 0px 1px 2px #111;
+  text-shadow: 0px 1px 2px #0c285a;
   letter-spacing: 2.5px;
 }
 
 .g-txt {
-  color: #999;
+  color: #064a92;
   font-size: 14px;
   letter-spacing: 2.5px;
   line-height: 1.8em;
@@ -221,6 +221,10 @@ a:focus {
   letter-spacing: 0.2px;
   line-height: 1.8em;
   margin-top: 25px;
+}
+
+.glyphicon {
+  color: #070782;
 }
 
 #presentation {
@@ -240,7 +244,7 @@ a:focus {
 }
 
 #what_we_do {
-  background-color: #f8f8f8;
+  background-color: rgba(146, 191, 218, 0.14);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -254,7 +258,7 @@ a:focus {
 #box_1:hover,
 #box_2:hover,
 #box_3:hover {
-  box-shadow: 0px 0px 50px #949292;
+  box-shadow: 0px 0px 50px rgb(133, 171, 224);
   cursor: pointer;
   transition: all 1s ease 0s;
 }
@@ -263,9 +267,9 @@ a:focus {
   background-color: #fff;
   display: block;
   height: 100%;
-  box-shadow: 0 3px 5px #ddd;
+  box-shadow: 0 3px 5px rgba(190, 212, 241, 0.4);
   padding: 50px 40px;
-  border: 1px solid #f8f8f8;
+  border: 1px solid rgba(214, 231, 253, 0.75);
   width: 30%;
 }
 
@@ -288,7 +292,7 @@ a:focus {
 }
 
 .box_title {
-  color: #111;
+  color: #064a92;
   font-size: 1.5em;
   letter-spacing: 2.5px;
   margin: 20px 0 30px 0;
@@ -314,16 +318,20 @@ a:focus {
 }
 
 .box_link a {
-  color: #777;
+  color: #070782;
   cursor: pointer;
 }
 
 .box_link>a:hover,
 .box_link>a:focus,
 .box_link>a:active {
-  color: #000;
+  color: #0055c1;
   transition: all 0.5s ease 0s;
-  text-shadow: 2px 2px 3px #7d7676;
+  text-shadow: 2px 2px 3px #68acff;
+}
+
+.glyphicon-arrow-right:hover {
+  color: #0055c1;
 }
 
 @media only screen and (max-width: 860px) {
@@ -357,7 +365,7 @@ a:focus {
 }
 
 #banner_section {
-  background: url(../img/sea.jpg);
+  background: url(../img/blue_sky2.jpg);
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -414,6 +422,7 @@ a:focus {
 }
 
 .mobile_title {
+  color: #0032a7;
 	font-size: 1.3em;
 	font-weight: 600;
 	padding-bottom: 30px;
@@ -472,7 +481,7 @@ a:focus {
     padding-bottom: 20px;
   }
   #mobile_responsive {
-    padding-bottom: 30px !important;
+    padding-bottom: 20px;
   }
 }
 
