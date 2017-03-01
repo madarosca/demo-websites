@@ -37,6 +37,10 @@ a:hover, a:focus {
   opacity: 0.5;
 }
 
+#change_icon {
+  color: #010735;
+}
+
 #change_theme>a{
   color: #010735 !important;
   padding: 5px;
@@ -101,7 +105,7 @@ a:hover, a:focus {
   border: none !important;
   z-index: 1100;
   background: transparent !important;
-  box-shadow: 0 3px 10px rgb(86, 157, 212);
+  box-shadow: 0 3px 10px rgba(86, 104, 13, 0.55);
   border-radius: 0px !important;
 }
 
@@ -110,7 +114,7 @@ a:hover, a:focus {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #010735 !important;
+  color: #000000 !important;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -123,7 +127,7 @@ a:hover, a:focus {
   color: #fff !important;
   text-decoration: none !important;
   transition: all 1s ease 0s;
-  box-shadow: 0 3px 10px #1186bd;
+  box-shadow: 0 3px 10px #295d01;
 }
 
 a:focus {
@@ -156,12 +160,12 @@ a:focus {
 
 @media (max-width: 768px) {
 .navbar-collapse {
-    background-color: #72afe8;
-    box-shadow: 0 3px 10px rgba(110, 169, 214, 0.78) !important;
+    background-color: #124801;
+    box-shadow: 0px 3px 10px rgba(24, 99, 0, 0.56) !important;
     }
 .navbar-header {
-    background-color: #72afe8;
-    box-shadow: 0 3px 10px rgba(110, 169, 214, 0.78) !important;
+    background-color: #124801;
+    box-shadow: 0px 3px 10px rgba(24, 99, 0, 0.56) !important;
   }
 .navbar-default .nav>li>a:focus, 
 .nav>li>a:hover {
@@ -169,13 +173,13 @@ a:focus {
   color: #fff !important;
   text-decoration: none !important;
   transition: all 1s ease 0s;
-  box-shadow: 0 3px 10px rgba(110, 169, 214, 0.78);
+  box-shadow: 0 3px 10px rgba(24, 99, 0, 0.56);
   }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #e4ecfd;
+    background-color: #048202;
   }
 .navbar-toggle {
-    box-shadow: 0 3px 10px #e4ecfd;
+    box-shadow: 0 3px 10px #048202;
   }
 }
 
@@ -193,13 +197,19 @@ a:focus {
 /* content */
 
 .bg-overlay {
-    background: url(../img/blue_sky.jpg);
+    background: url(../img/green.jpg);
     position: relative;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
     margin-top: -70px;
+}
+
+@media (max-width: 380px) {
+  .section_overlay {
+    background: url(../img/green_mobile.jpg);
+  }
 }
 
 .overlay-content {
@@ -210,7 +220,7 @@ a:focus {
 }
 
 .h-large {
-  color: #001854 !important;
+  color: #0e5202 !important;
   font-size: 6em !important;
   font-weight: 800 !important;
   line-height: 1.2;
@@ -229,17 +239,17 @@ a:focus {
 }
 
 .h-subheading {
-  color: #001854;
+  color: #13a902;
   margin-top: 100px;
   margin-bottom: 30px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 1px #eaeaea;
-  font-weight: 600;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: 800;
 }
 
 .btn-overlay {
   color: #ececec;
-  background: #02115d;
+  background: #054601;
   display: inline-block;
   text-decoration: none;
   position: relative;
@@ -255,7 +265,7 @@ a:focus {
 
 .btn-overlay:hover, .btn-overlay:focus {
   color: #fff !important;
-  background: #0853da;
+  background: #04ab30;
 }
 
 .scroll {
@@ -265,17 +275,17 @@ a:focus {
 
 #scroll-icon {
   font-size: 30px;
-  color: #0853da;
+  color: #00a215;
   margin-top: 10px;
 }
 
 #scroll-icon:hover {
-  color: #070782;
+  color: #054601;
 }
 
 #scroll-text {
   display: none;
-  color: #070782;
+  color: #054601;
   position: relative;
   text-align: center;
   padding-bottom: 30px;
@@ -294,14 +304,14 @@ a:focus {
 }
 
 .b-title {
-  color: #02004c;
+  color: #0e5202;
   text-transform: uppercase;
-  text-shadow: 0px 1px 2px #0c285a;
+  text-shadow: 0px 1px 2px #178c02;
   letter-spacing: 2.5px;
 }
 
 .g-txt {
-  color: #064a92;
+  color: #378e02;
   font-size: 14px;
   letter-spacing: 2.5px;
   line-height: 1.8em;
@@ -318,7 +328,7 @@ a:focus {
 }
 
 .glyphicon {
-  color: #070782;
+  color: #248207;
 }
 
 #presentation {
@@ -338,7 +348,7 @@ a:focus {
 }
 
 #what_we_do {
-  background-color: rgba(146, 191, 218, 0.14);
+  background-color: rgba(87, 179, 49, 0.14);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -352,7 +362,7 @@ a:focus {
 #box_1:hover,
 #box_2:hover,
 #box_3:hover {
-  box-shadow: 0px 0px 50px rgb(133, 171, 224);
+  box-shadow: 0px 0px 50px rgb(134, 224, 133);
   cursor: pointer;
   transition: all 1s ease 0s;
 }
@@ -361,9 +371,9 @@ a:focus {
   background-color: #fff;
   display: block;
   height: 100%;
-  box-shadow: 0 3px 5px rgba(190, 212, 241, 0.4);
+  box-shadow: 0 3px 5px rgba(170, 230, 159, 0.4);
   padding: 50px 40px;
-  border: 1px solid rgba(214, 231, 253, 0.75);
+  border: 1px solid rgba(154, 234, 139, 0.53);
   width: 30%;
 }
 
@@ -386,7 +396,7 @@ a:focus {
 }
 
 .box_title {
-  color: #064a92;
+  color: #15ad04;
   font-size: 1.5em;
   letter-spacing: 2.5px;
   margin: 20px 0 30px 0;
@@ -412,20 +422,20 @@ a:focus {
 }
 
 .box_link a {
-  color: #070782;
+  color: #248207;
   cursor: pointer;
 }
 
 .box_link>a:hover,
 .box_link>a:focus,
 .box_link>a:active {
-  color: #0055c1;
+  color: #248207;
   transition: all 0.5s ease 0s;
-  text-shadow: 2px 2px 3px #68acff;
+  text-shadow: 2px 2px 3px #72dc6b;
 }
 
 .glyphicon-arrow-right:hover {
-  color: #0055c1;
+  color: #248207;
 }
 
 @media only screen and (max-width: 860px) {
@@ -459,7 +469,7 @@ a:focus {
 }
 
 #banner_section {
-  background: url(../img/blue_sky2.jpg);
+  background: url(../img/green2.jpg);
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -517,7 +527,7 @@ a:focus {
 }
 
 .mobile_title {
-  color: #0032a7;
+  color: #14b302;
 	font-size: 1.3em;
 	font-weight: 600;
 	padding-bottom: 30px;
@@ -557,7 +567,7 @@ a:focus {
 }
 
 .section_overlay2 {
-  background-color: rgba(60, 154, 169, 0.52);
+  background-color: rgba(66, 148, 56, 0.52);
   height: 250px;
 }
 

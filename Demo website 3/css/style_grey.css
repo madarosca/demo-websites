@@ -101,7 +101,7 @@ a:hover, a:focus {
   border: none !important;
   z-index: 1100;
   background: transparent !important;
-  box-shadow: 0 3px 10px rgb(86, 157, 212);
+  box-shadow: 0 3px 10px #ddd;
   border-radius: 0px !important;
 }
 
@@ -110,7 +110,7 @@ a:hover, a:focus {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #010735 !important;
+  color: #7a7b7c !important;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -120,10 +120,10 @@ a:hover, a:focus {
 .navbar-default .nav>li>a:focus, 
 .nav>li>a:hover {
   background-color: transparent !important;
-  color: #fff !important;
+  color: #111 !important;
   text-decoration: none !important;
   transition: all 1s ease 0s;
-  box-shadow: 0 3px 10px #1186bd;
+  box-shadow: 0 3px 10px #bab9c7;
 }
 
 a:focus {
@@ -156,26 +156,12 @@ a:focus {
 
 @media (max-width: 768px) {
 .navbar-collapse {
-    background-color: #72afe8;
-    box-shadow: 0 3px 10px rgba(110, 169, 214, 0.78) !important;
+    background-color: #d8d8e0;
+    box-shadow: 0px 3px 10px #b3b5c2 !important;
     }
 .navbar-header {
-    background-color: #72afe8;
-    box-shadow: 0 3px 10px rgba(110, 169, 214, 0.78) !important;
-  }
-.navbar-default .nav>li>a:focus, 
-.nav>li>a:hover {
-  background-color: transparent !important;
-  color: #fff !important;
-  text-decoration: none !important;
-  transition: all 1s ease 0s;
-  box-shadow: 0 3px 10px rgba(110, 169, 214, 0.78);
-  }
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #e4ecfd;
-  }
-.navbar-toggle {
-    box-shadow: 0 3px 10px #e4ecfd;
+    background-color: #d8d8e0;
+    box-shadow: 0px 3px 10px #b3b5c2 !important;
   }
 }
 
@@ -184,6 +170,7 @@ a:focus {
     width: 150px;
     padding: 10px !important;
 }
+
 #logo {
     max-width: 80%;
 }
@@ -193,13 +180,13 @@ a:focus {
 /* content */
 
 .bg-overlay {
-    background: url(../img/blue_sky.jpg);
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: -70px;
+  background: url(../img/fog.jpg);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -70px;
 }
 
 .overlay-content {
@@ -210,7 +197,7 @@ a:focus {
 }
 
 .h-large {
-  color: #001854 !important;
+  color: #383c46 !important;
   font-size: 6em !important;
   font-weight: 800 !important;
   line-height: 1.2;
@@ -229,17 +216,16 @@ a:focus {
 }
 
 .h-subheading {
-  color: #001854;
+  color: #383c46;
   margin-top: 100px;
   margin-bottom: 30px;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #eaeaea;
-  font-weight: 600;
-}
+  font-weight: 600;}
 
 .btn-overlay {
   color: #ececec;
-  background: #02115d;
+  background: #5d606f;
   display: inline-block;
   text-decoration: none;
   position: relative;
@@ -253,9 +239,9 @@ a:focus {
   -webkit-transition: all 1s;
 }
 
-.btn-overlay:hover, .btn-overlay:focus {
+.btn-overlay:hover {
   color: #fff !important;
-  background: #0853da;
+  background: #000;
 }
 
 .scroll {
@@ -265,17 +251,17 @@ a:focus {
 
 #scroll-icon {
   font-size: 30px;
-  color: #0853da;
+  color: rgba(17, 17, 17, 0.58);
   margin-top: 10px;
 }
 
 #scroll-icon:hover {
-  color: #070782;
+  color: #111;
 }
 
 #scroll-text {
   display: none;
-  color: #070782;
+  color: #111;
   position: relative;
   text-align: center;
   padding-bottom: 30px;
@@ -294,14 +280,14 @@ a:focus {
 }
 
 .b-title {
-  color: #02004c;
+  color: #111;
   text-transform: uppercase;
-  text-shadow: 0px 1px 2px #0c285a;
+  text-shadow: 0px 1px 2px #111;
   letter-spacing: 2.5px;
 }
 
 .g-txt {
-  color: #064a92;
+  color: #999;
   font-size: 14px;
   letter-spacing: 2.5px;
   line-height: 1.8em;
@@ -315,10 +301,6 @@ a:focus {
   letter-spacing: 0.2px;
   line-height: 1.8em;
   margin-top: 25px;
-}
-
-.glyphicon {
-  color: #070782;
 }
 
 #presentation {
@@ -338,7 +320,7 @@ a:focus {
 }
 
 #what_we_do {
-  background-color: rgba(146, 191, 218, 0.14);
+  background-color: #f8f8f8;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -352,7 +334,7 @@ a:focus {
 #box_1:hover,
 #box_2:hover,
 #box_3:hover {
-  box-shadow: 0px 0px 50px rgb(133, 171, 224);
+  box-shadow: 0px 0px 50px #949292;
   cursor: pointer;
   transition: all 1s ease 0s;
 }
@@ -361,9 +343,9 @@ a:focus {
   background-color: #fff;
   display: block;
   height: 100%;
-  box-shadow: 0 3px 5px rgba(190, 212, 241, 0.4);
+  box-shadow: 0 3px 5px #ddd;
   padding: 50px 40px;
-  border: 1px solid rgba(214, 231, 253, 0.75);
+  border: 1px solid #f8f8f8;
   width: 30%;
 }
 
@@ -386,7 +368,7 @@ a:focus {
 }
 
 .box_title {
-  color: #064a92;
+  color: #111;
   font-size: 1.5em;
   letter-spacing: 2.5px;
   margin: 20px 0 30px 0;
@@ -412,20 +394,16 @@ a:focus {
 }
 
 .box_link a {
-  color: #070782;
+  color: #777;
   cursor: pointer;
 }
 
 .box_link>a:hover,
 .box_link>a:focus,
 .box_link>a:active {
-  color: #0055c1;
+  color: #000;
   transition: all 0.5s ease 0s;
-  text-shadow: 2px 2px 3px #68acff;
-}
-
-.glyphicon-arrow-right:hover {
-  color: #0055c1;
+  text-shadow: 2px 2px 3px #7d7676;
 }
 
 @media only screen and (max-width: 860px) {
@@ -459,7 +437,7 @@ a:focus {
 }
 
 #banner_section {
-  background: url(../img/blue_sky2.jpg);
+  background: url(../img/sea.jpg);
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -517,7 +495,6 @@ a:focus {
 }
 
 .mobile_title {
-  color: #0032a7;
 	font-size: 1.3em;
 	font-weight: 600;
 	padding-bottom: 30px;
@@ -557,7 +534,7 @@ a:focus {
 }
 
 .section_overlay2 {
-  background-color: rgba(60, 154, 169, 0.52);
+  background-color: rgba(128, 128, 128, 0.52);
   height: 250px;
 }
 

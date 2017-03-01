@@ -33,13 +33,23 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-              	<li><a href="#" id="style_blue">Blue theme</a></li>
                 <li><a href="#">Menu 1</a></li>
                 <li><a href="#">Menu 2</a></li>
                 <li><a href="#">Menu 3</a></li>
-                <li><a href="#">LOG IN</a></li>
+                <li><a href="login.php">LOG IN</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
+            <!-- Change color theme -->
+            <div id="change_theme" class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+            	<a href="#">Change color theme <span id="change_icon" class="glyphicon glyphicon-arrow-down"></span></a>
+	            <div id="color_themes">
+	            	<div id="style_grey"><a href="#">Grey</a></div>
+	            	<div id="style_blue"><a href="#">Blue</a></div>
+	            	<div id="style_red"><a href="#">Red</a></div>
+	            	<div id="style_green"><a href="#">Green</a></div>
+	            </div>
+	        </div>
+	        <!-- End change color theme -->
           </div><!-- /.nav-container-fluid -->
         </nav>
         <!-- end navbar -->
@@ -106,7 +116,7 @@
         <div class="clearfix"></div>
         <div id="banner_section" class="col-lg-12 text-center">
             <div class="section_overlay">
-                <div class="big_icon grow_pic col-lg-3 col-md-3 col-sm-3 col-xs-6"><img id="icon1" src="img/icon1.png"><p class="sec_text">Web development</p></div>
+                <div class="big_icon col-lg-3 col-md-3 col-sm-3 col-xs-6"><img id="icon1" src="img/icon1.png"><p class="sec_text">Web development</p></div>
                 <div class="big_icon col-lg-3 col-md-3 col-sm-3 col-xs-6"><img id="icon2" src="img/icon2.png"><p class="sec_text">Web design</p></div>
                 <div class="big_icon col-lg-3 col-md-3 col-sm-3 col-xs-6"><img id="icon3" src="img/icon3.png"><p class="sec_text">Photography</p></div>
                 <div class="big_icon big_icon_last col-lg-3 col-md-3 col-sm-3 col-xs-6"><img id="icon4" src="img/icon4.png"><p class="sec_text">Marketing</p></div>
@@ -120,45 +130,57 @@
             </div>
             <div class="row col-lg-12 mobile_info">
                 <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12" id="mobile_info_left">
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
                         <div class="mobile_title left">Easily Adjust</div>
                         <div class="mobile_content left">Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
-                        <img src="img/i_left1.svg">
+                        <img src="img/i_left1.svg" id="mobile_hide">
                     </div>
                     <br>
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
                         <div class="mobile_title left">Responsive design</div>
                         <div class="mobile_content left">Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
-                        <img src="img/i_left2.svg">
+                        <img src="img/i_left2.svg" id="mobile_hide">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <img id="mobile_responsive" src="img/responsive_ipad.png"></div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="mobile_info_right">
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
                         <div class="mobile_title right">Modular Design</div>
                         <div class="mobile_content right">Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
-                        <img src="img/i_right1.svg">
+                        <img src="img/i_right1.svg" id="mobile_hide">
                     </div>
                     <br>
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
                         <div class="mobile_title right">Mobile friendly</div>
                         <div class="mobile_content right">Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
-                        <img src="img/i_right2.svg">
+                        <img src="img/i_right2.svg" id="mobile_hide">
                     </div>
                 </div>
             </div>
         </div><!-- end mobile_friendly -->
         <div class="clearfix"></div>
+        <div id="banner_section2" class="col-lg-12 text-center">
+            <div class="section_overlay2">
+                <div class="big_icon2 col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="sec_text2">467</span><p class="sec_text">PROJECTS COMPLETED</p></div>
+                <div class="big_icon2 col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="sec_text2">2,835</span><p class="sec_text">EMAILS SENT</p></div>
+                <div class="big_icon2 col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="sec_text2">46,930</span><p class="sec_text">PIXELS CREATED</p></div>
+                <div class="big_icon2 big_icon_last2 col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="sec_text2">102,890</span><p class="sec_text">HAPPY CLIENTS</p></div>
+            </div>
+        </div><!-- end banner_section2 -->
+        <div class="clearfix"></div>
+        <div class="footer col-lg-12">
+            
 
+        </div>
     </div><!-- end main-wrapper -->
 </body>
 <script src="js/default.js"></script>

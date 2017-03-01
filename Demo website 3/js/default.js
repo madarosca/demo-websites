@@ -1,7 +1,26 @@
+//script to open styles
+$(document).ready(function (e) {
+    $("#change_theme").click(
+      function() {
+          $("#color_themes").slideToggle(400);
+          $("#change_icon").toggleClass("glyphicon-arrow-down glyphicon-arrow-up");
+    });
+});
+//end script to open styles
+
 //script to dinamically change the style
 $(document).ready(function () {
+    $("#style_grey").click(function () {
+        $('head').append('<link rel="stylesheet" href="css/style_grey.css" type="text/css" />');
+    });
     $("#style_blue").click(function () {
         $('head').append('<link rel="stylesheet" href="css/style_blue.css" type="text/css" />');
+    });
+    $("#style_green").click(function () {
+        $('head').append('<link rel="stylesheet" href="css/style_green.css" type="text/css" />');
+    });
+    $("#style_red").click(function () {
+        $('head').append('<link rel="stylesheet" href="css/style_red.css" type="text/css" />');
     });
 });
 //end script to dinamically change the style
@@ -15,7 +34,7 @@ $(document).ready(function(){
         function() {
             $("#scroll-text").fadeOut("slow");
     });
-})
+});
 //end script for the arrow down
 
 //cache reference to window and animation items
