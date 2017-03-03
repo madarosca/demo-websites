@@ -1,4 +1,4 @@
-//script to open styles
+//script to open styles options
 $(document).ready(function (e) {
     $("#change_theme").click(
       function() {
@@ -6,21 +6,21 @@ $(document).ready(function (e) {
           $("#change_icon").toggleClass("glyphicon-arrow-down glyphicon-arrow-up");
     });
 });
-//end script to open styles
+//end script to open styles options
 
 //script to dinamically change the style
 $(document).ready(function () {
     $("#style_grey").click(function () {
-        $('head').append('<link rel="stylesheet" href="css/style_grey.css" type="text/css" />');
+        $('head').append('<link rel="stylesheet" href="assets/style.css" type="text/css" />');
     });
     $("#style_blue").click(function () {
-        $('head').append('<link rel="stylesheet" href="css/style_blue.css" type="text/css" />');
+        $('head').append('<link rel="stylesheet" href="assets/style_blue.css" type="text/css" />');
     });
     $("#style_green").click(function () {
-        $('head').append('<link rel="stylesheet" href="css/style_green.css" type="text/css" />');
+        $('head').append('<link rel="stylesheet" href="assets/style_green.css" type="text/css" />');
     });
     $("#style_red").click(function () {
-        $('head').append('<link rel="stylesheet" href="css/style_red.css" type="text/css" />');
+        $('head').append('<link rel="stylesheet" href="assets/style_red.css" type="text/css" />');
     });
 });
 //end script to dinamically change the style
@@ -37,7 +37,7 @@ $(document).ready(function(){
 });
 //end script for the arrow down
 
-//cache reference to window and animation items
+//window animation on scroll
 var $animation_elements = $('.animation-element');
 var $window = $(window);
 function check_if_in_view() {
@@ -74,3 +74,38 @@ $(document).ready(function() {
     });
 });
 //end window animation on scroll
+
+// Modal hide on window click
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+var modal = document.getElementById('id02');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+//end modal hide on click
+
+//show/hide scroll to top button
+$("#scroll_to_top").hide(); // hide on page load
+$(window).bind('scroll', function(){
+    if($(this).scrollTop() > 400) { // show after 400 px of user scrolling
+      $("#scroll_to_top").slideDown("slow");
+    }
+    else { // hide before 400 px of user scrolling
+      $("#scroll_to_top").slideUp("slow");
+    }
+});
+//end show/hide scroll to top button
+
+//scroll to top effect
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+//end scroll to top effect

@@ -98,6 +98,26 @@ a:hover, a:focus {
   color: #fff;
 }
 
+#style_grey:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#style_blue:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#style_red:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#style_green:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 /* top-navbar */
 
 .navbar {
@@ -156,6 +176,8 @@ a:focus {
 
 .navbar-collapse {
   border-top: none !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
 }
 
 @media (max-width: 768px) {
@@ -327,9 +349,7 @@ a:focus {
   margin-top: 25px;
 }
 
-.glyphicon {
-  color: #248207;
-}
+
 
 #presentation {
   margin-top: 50px;
@@ -392,7 +412,7 @@ a:focus {
 
 .box_image {
   font-size: 6em;
-  color: #676767;
+  color: #248207;
 }
 
 .box_title {
@@ -422,7 +442,7 @@ a:focus {
 }
 
 .box_link a {
-  color: #248207;
+  color: #248207 !important;
   cursor: pointer;
 }
 
@@ -606,9 +626,6 @@ a:focus {
   .big_icon_last {
     margin-top: -185px;
   }
-  .big_icon_last2 {
-    margin-top: -140px;
-  }
   .mobile_content, .mobile_title {
     text-align: center;
   }
@@ -621,6 +638,12 @@ a:focus {
   #change_theme {
     margin-top: 10px !important;
     margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 560px){
+  .big_icon_last2 {
+    margin-top: -140px;
   }
 }
 
@@ -777,3 +800,228 @@ a:focus {
     margin: 0px 0px 0px 20px;
   }
 }
+
+/* footer */
+.footer {
+  background-color: #001301;
+  margin-top: 30px;
+  color: #9e9e9e;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.footer_header {
+  color: #dadada;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(119, 117, 117, 0.56);
+  padding-bottom: 10px;
+}
+
+.a_social:hover {
+  color: #fff;
+}
+
+.contact_list li {
+  list-style-type: none;
+}
+
+.social_links a {
+  color: #dadada;
+}
+
+.social_links i {
+  font-size: 35px;
+}
+
+#subscribe_form {
+  display: inline-block;
+  max-width: 80%;
+  background-color: #e6e6e6;
+}
+
+#subscribe_btn {
+  display: inline-block;
+  margin-top: -3px;
+  background-color: #e6e6e6;
+}
+
+#subscribe_btn:hover {
+  background-color: #fff;
+}
+
+.copyright {
+  background-color: #153115;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.copyright small {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: #9e9e9e;
+}
+/* end footer */
+
+/*login and register modal*/
+.login_register {
+  background-color: #f8f8f8;
+}
+
+.img_container {
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+
+img.avatar {
+  width: 25%;
+  border-radius: 50%;
+}
+
+span.pwd {
+  float: right;
+}
+
+.register_link {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Change styles on small screens */
+@media screen and (max-width: 1000px) {
+  .modal-content {
+    height: 450px !important;
+  }
+  .modal {
+    position: absolute !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  span.pwd {
+     display: block;
+     float: none;
+  }
+  .cancel_btn {
+    width: 100%; 
+  }
+  .login_btn {
+    width: 100%; 
+    margin-bottom: 10px !important;
+  }
+  .modal-content {
+    height: 450px !important;
+  }
+  .modal {
+    position: absolute !important;
+  }
+  .close{
+    font-size: 16px !important;
+    right: 10px !important;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1100 !important; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 650px; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.68);
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #e2f7e2 !important;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 60%; 
+    height: 520px;
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: relative;
+    right: 25px;
+    top: 0; 
+    color: #016f01;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.5 !important;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .5;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Scroll to top button */
+#scroll_to_top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  background-color: #9cb47a;
+  opacity: 0.7;
+  box-shadow: -2px -2px 5px 0px #e2e2e2;
+}
+
+#scroll_to_top:hover {
+  opacity: 1;
+}
+
+#scroll_to_top i {
+  color: #fff;
+  font-size: 35px;
+  padding-left: 11px;
+  padding-top: 5px;
+}
+
+#scroll_to_top + .tooltip > .tooltip-inner {
+  background-color: #9cb47a;
+  opacity: 0.9;
+}
+
+#scroll_to_top + .tooltip.left > .tooltip-arrow {
+  border-left: 5px solid #9cb47a;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 500px) {
+  #scroll_to_top + .tooltip {
+  display: none !important;
+  }
+}
+/* End Scroll to top button */

@@ -93,6 +93,26 @@ a:hover, a:focus {
   color: #fff;
 }
 
+#style_grey:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#style_blue:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#style_red:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#style_green:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 /* top-navbar */
 .navbar {
   margin-bottom: 0 !important;
@@ -150,6 +170,8 @@ a:focus {
 
 .navbar-collapse {
   border-top: none !important;
+  overflow-x: hidden !important;
+  padding: 0 !important;
 }
 
 @media (max-width: 768px) {
@@ -167,6 +189,14 @@ a:focus {
     float: left !important;
     width: 150px;
     padding: 10px !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-right {
+  margin-right: 0px !important;
 }
 
 #logo {
@@ -390,14 +420,14 @@ a:focus {
 }
 
 .box_link a {
-  color: #777;
+  color: #777 !important;
   cursor: pointer;
 }
 
 .box_link>a:hover,
 .box_link>a:focus,
 .box_link>a:active {
-  color: #000;
+  color: #000 !important;
   transition: all 0.5s ease 0s;
   text-shadow: 2px 2px 3px #7d7676;
 }
@@ -496,6 +526,7 @@ a:focus {
 	padding-bottom: 30px;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
+  color: #111;
 }
 
 .mobile_content {
@@ -515,7 +546,7 @@ a:focus {
 }
 
 #mobile_hide:hover {
-  box-shadow: 0px 0px 30px #a09d9d;
+  box-shadow: 0px 0px 30px #bdbdbd;
   cursor: pointer;
   transition: all 1s ease 0s;
 }
@@ -569,9 +600,6 @@ a:focus {
   .big_icon_last {
     margin-top: -185px;
   }
-  .big_icon_last2 {
-    margin-top: -140px;
-  }
   .mobile_content, .mobile_title {
     text-align: center;
   }
@@ -584,6 +612,12 @@ a:focus {
   #change_theme {
     margin-top: 10px !important;
     margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 560px){
+  .big_icon_last2 {
+    margin-top: -140px;
   }
 }
 
@@ -742,10 +776,71 @@ a:focus {
 /* content */
 
 /* footer */
+.footer {
+  background-color: #111;
+  margin-top: 30px;
+  color: #777;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 
+.footer_header {
+  color: #dadada;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(119, 117, 117, 0.56);
+  padding-bottom: 10px;
+}
+
+.a_social:hover {
+  color: #fff;
+}
+
+.contact_list li {
+  list-style-type: none;
+}
+
+.social_links a {
+  color: #777;
+}
+
+.social_links i {
+  font-size: 35px;
+}
+
+#subscribe_form {
+  display: inline-block;
+  max-width: 80%;
+  background-color: #e6e6e6;
+}
+
+#subscribe_btn {
+  display: inline-block;
+  margin-top: -3px;
+  background-color: #e6e6e6;
+}
+
+#subscribe_btn:hover {
+  background-color: #fff;
+}
+
+.copyright {
+  background-color: #222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.copyright small {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: #777;
+}
 /* end footer */
 
-/*login and register page*/
+/*login and register modal*/
 .login_register {
   background-color: #f8f8f8;
 }
@@ -753,7 +848,7 @@ a:focus {
 .img_container {
   text-align: center;
   padding: 30px;
-  width: 50%;
+  width: 100%;
 }
 
 img.avatar {
@@ -761,7 +856,145 @@ img.avatar {
   border-radius: 50%;
 }
 
+span.pwd {
+  float: right;
+}
+
 .register_link {
+  font-size: 14px;
   text-align: center;
 }
-/*end login and register page*/
+
+/* Change styles on small screens */
+@media screen and (max-width: 1000px) {
+  .modal-content {
+    height: 450px !important;
+  }
+  .modal {
+    position: absolute !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  span.pwd {
+     display: block;
+     float: none;
+  }
+  .cancel_btn {
+    width: 100%; 
+  }
+  .login_btn {
+    width: 100%; 
+    margin-bottom: 10px !important;
+  }
+  .modal-content {
+    height: 450px !important;
+  }
+  .modal {
+    position: absolute !important;
+  }
+  .close{
+    font-size: 16px !important;
+    right: 10px !important;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1100 !important; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 650px; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.68);
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #f3f3f3 !important;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 60%; 
+    height: 520px;
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: relative;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .5;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Scroll to top button */
+#scroll_to_top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  background-color: #9a9999;
+  opacity: 0.7;
+  box-shadow: -2px -2px 5px 0px #e2e2e2;
+}
+
+#scroll_to_top:hover {
+  opacity: 1;
+}
+
+#scroll_to_top i {
+  color: #fff;
+  font-size: 35px;
+  padding-left: 11px;
+  padding-top: 5px;
+}
+
+#scroll_to_top + .tooltip > .tooltip-inner {
+  background-color: #9a9999;
+  opacity: 0.9;
+}
+
+#scroll_to_top + .tooltip.left > .tooltip-arrow {
+  border-left: 5px solid #9a9999;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 500px) {
+  #scroll_to_top + .tooltip {
+  display: none !important;
+  }
+}
+/* End Scroll to top button */

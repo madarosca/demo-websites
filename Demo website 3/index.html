@@ -8,17 +8,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="description" content="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit">
+        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
-        <link href="css/style.css" type="text/css" rel="stylesheet">
-        <link href="css/buttons.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Styles -->
+        <link href="assets/style.css" type="text/css" rel="stylesheet">
+        <link href="assets/buttons.css" type="text/css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <!-- Font awesome -->
+        <link href="assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+        <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     </head>
 <body>
     <div class="main-wrapper">
         <!-- navbar -->
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default" role="navigation" id="top">
           <div class="nav-container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -28,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="img/logo.gif" id="logo"></img></a>
+              <a class="navbar-brand" href="index.html"><img src="img/logo.gif" id="logo"></img></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
@@ -36,7 +42,7 @@
                 <li><a href="#">Menu 1</a></li>
                 <li><a href="#">Menu 2</a></li>
                 <li><a href="#">Menu 3</a></li>
-                <li><a href="login.php">LOG IN</a></li>
+                <li><a onclick="document.getElementById('id01').style.display='block'" href="#">LOG IN</A></li>
               </ul>
             </div><!-- /.navbar-collapse -->
             <!-- Change color theme -->
@@ -51,9 +57,64 @@
 	        </div>
 	        <!-- End change color theme -->
           </div><!-- /.nav-container-fluid -->
-        </nav>
-        <!-- end navbar -->
-        <div class="bg-overlay">
+        </nav><!-- end navbar -->
+        <!-- Open Login Modal -->
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/login.php">
+            <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container-fluid col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+              <div class="form-group">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="user_name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="pwd" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="login_btn btn btn-success gradient pull-right">Login</button>
+                <button type="button" class="cancel_btn btn btn-danger gradient" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+              </div>
+              <div class="form-group">
+                <span><input type="checkbox" checked="checked"> Remember me</span>
+                <span class="pwd">Forgot <a href="#">password?</a></span>
+              </div>
+              <div><h4 class="register_link">Don't have an account? Click <a onclick="document.getElementById('id02').style.display='block', document.getElementById('id01').style.display='none'" href="#">HERE</a> to create one!</h4></div>
+            </div>
+        </form>
+        </div><!-- end Login modal -->
+        
+        <!-- Open Register Modal -->
+        <div id="id02" class="modal">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">Close</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/register.php">
+            <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h4>Create a new account</h4>
+              <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container-fluid col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+              <div class="form-group">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="user_name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="pwd" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="login_btn btn btn-success gradient pull-right">Submit</button>
+                <button type="button" class="cancel_btn btn btn-danger gradient" onclick="document.getElementById('id02').style.display='none'">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div><!-- end Register modal -->
+        
+        <div class="bg-overlay"><!-- start bg-overlay -->
             <div class="overlay-content animation-element slide-left introduction">
                     <h1 class="h-large">Created<br>for creatives</h1>
                     <h4 class="h-subheading">Multipage & onepage HTML5 templates</h4>
@@ -169,7 +230,7 @@
         </div><!-- end mobile_friendly -->
         <div class="clearfix"></div>
         <div id="banner_section2" class="col-lg-12 text-center">
-            <div class="section_overlay2">
+            <div class="section_overlay2 container-fluid">
                 <div class="big_icon2 col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="sec_text2">467</span><p class="sec_text">PROJECTS COMPLETED</p></div>
                 <div class="big_icon2 col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="sec_text2">2,835</span><p class="sec_text">EMAILS SENT</p></div>
                 <div class="big_icon2 col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="sec_text2">46,930</span><p class="sec_text">PIXELS CREATED</p></div>
@@ -178,9 +239,52 @@
         </div><!-- end banner_section2 -->
         <div class="clearfix"></div>
         <div class="footer col-lg-12">
-            
-
+            <div class="container-fluid">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 about_us">
+                    <h5 class="footer_header"><i class="fa fa-book"></i> About us</h5>
+                    <p>Lorem ipsum dolor sit amet, eiusmod consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 contact_us">
+                <h5 class="footer_header"><i class="fa fa-address-card"></i> Contact us</h5>
+                    <ul class="contact_list col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <li><i class="fa fa-map"></i> <span>Address:</span> 1200 some street, IL, US</li>
+                        <li><i class="fa fa-phone-square"></i> <span>Phone</span>
+                            <li>+ 123 4567 890</li>
+                            <li>+ 123 7654 098</li>
+                        </li>
+                    </ul>
+                    <ul class="contact_list col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <li><i class="fa fa-envelope"></i> <span>E-mail:</span> <a href="mailto:sayhello@email.com" class="a_social footer">sayhello@email.com</a></li>
+                        <li><i class="fa fa-clock-o"></i> <span>Open hours</span>
+                            <li>Mon-Fri: 9am-5pm</li>
+                            <li>Sat: 10am-1pm</li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 social_media">
+                    <h5 class="footer_header"><i class="fa fa-globe"></i> Social media</h5>
+                    <div class="social_links col-lg-12">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a href="#" class="a_social"><i class="fa fa-facebook-square"></i></a></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a href="#" class="a_social"><i class="fa fa-twitter-square"></i></a></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a href="#" class="a_social"><i class="fa fa-linkedin-square"></i></a></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a href="#" class="a_social"><i class="fa fa-youtube-square"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 newsletter">
+                <h5 class="footer_header"><i class="fa fa-newspaper-o"></i> Newsletter</h5>
+                    <form>
+                        <div class="form-group">
+                            <span><input type="email" placeholder="Join our newsletter" name="email" class="form-control" id="subscribe_form">
+                            <button type="submit" name="subscribe" id="subscribe_btn" class="btn btn-default"><i class="fa fa-send-o"></i></button></span>
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-12 copyright container-fluid">
+                <small>© 2017 Demo website. Made by Madalina Rosca</small>
+            </div>
         </div>
+        <div id="scroll_to_top" data-toggle="tooltip" data-placement="left" title="Scroll to top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
     </div><!-- end main-wrapper -->
 </body>
 <script src="js/default.js"></script>
