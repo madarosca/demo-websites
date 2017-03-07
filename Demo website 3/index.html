@@ -62,7 +62,7 @@
         <div id="id01" class="modal">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
         <!-- Modal Content -->
-        <form class="modal-content animate" action="/login.php">
+        <form class="modal-content animate" action="login.php" method="POST">
             <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
             </div>
@@ -92,7 +92,7 @@
         <div id="id02" class="modal">
           <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">Close</span>
         <!-- Modal Content -->
-        <form class="modal-content animate" action="/register.php">
+        <form class="modal-content animate" action="register.php" method="POST">
             <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h4>Create a new account</h4>
               <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
@@ -100,14 +100,22 @@
             <div class="container-fluid col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
               <div class="form-group">
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="user_name" class="form-control" required>
+                <input type="text" placeholder="Enter Username" name="username" id="username" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label><b>E-mail</b></label>
+                <input type="text" placeholder="Enter e-mail" name="email" id="email" class="form-control" required>
               </div>
               <div class="form-group">
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="pwd" class="form-control" required>
+                <input type="password" placeholder="Enter Password" name="pwd" id="pwd" class="form-control" required>
               </div>
               <div class="form-group">
-                <button type="submit" class="login_btn btn btn-success gradient pull-right">Submit</button>
+                <label><b>Confirm password</b></label>
+                <input type="password" placeholder="Enter Password" name="c_pwd" id="c_pwd" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="login_btn btn btn-success gradient pull-right" name="submit" id="submit" value="Register">Submit</button>
                 <button type="button" class="cancel_btn btn btn-danger gradient" onclick="document.getElementById('id02').style.display='none'">Cancel</button>
               </div>
             </div>

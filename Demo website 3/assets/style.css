@@ -873,12 +873,20 @@ span.pwd {
   .modal {
     position: absolute !important;
   }
+  #id02 .img_container {
+    height: 30% !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .form-group {
+    margin-bottom: 10px !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
   span.pwd {
-     display: block;
-     float: none;
+   display: block;
+   float: none;
   }
   .cancel_btn {
     width: 100%; 
@@ -896,6 +904,17 @@ span.pwd {
   .close{
     font-size: 16px !important;
     right: 10px !important;
+  }
+  #id02 .avatar {
+    width: 25%;
+  }
+  #id02 .img_container {
+    height: 20% !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .form-group {
+    margin-bottom: 10px!important;
   }
 }
 
@@ -921,6 +940,16 @@ span.pwd {
     border: 1px solid #888;
     width: 60%; 
     height: 520px;
+}
+
+#id02 .img_container {
+  height: 35%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#id02 .avatar {
+  width: 18%;
 }
 
 /* The Close Button */
