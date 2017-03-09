@@ -17,9 +17,6 @@
         <link href="assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
         <!-- Font awesome -->
         <link href="assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     </head>
 <body>
     <div class="main-wrapper">
@@ -62,18 +59,22 @@
         <div id="id01" class="modal">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
         <!-- Modal Content -->
-        <form class="modal-content animate" action="login.php" method="POST">
+        <form class="modal-content animate" action="login.php" autocomplete="off" method="POST" id="login">
             <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
             </div>
             <div class="container-fluid col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
               <div class="form-group">
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="user_name" class="form-control" required>
+                <input type="text" placeholder="Enter Username" name="username" id="username" class="form-control" data-validation="length alphanumeric" data-validation-length="min3" required>
+              </div>
+              <div class="form-group">
+                <label><b>E-mail</b></label>
+                <input type="text" placeholder="Enter e-mail" name="email" class="form-control" required>
               </div>
               <div class="form-group">
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="pwd" class="form-control" required>
+                <input type="password" placeholder="Enter Password" name="password" class="form-control" required>
               </div>
               <div class="form-group">
                 <button type="submit" class="login_btn btn btn-success gradient pull-right">Login</button>
@@ -92,7 +93,7 @@
         <div id="id02" class="modal">
           <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">Close</span>
         <!-- Modal Content -->
-        <form class="modal-content animate" action="register.php" method="POST">
+        <form class="modal-content animate" autocomplete="off" action="register.php" method="POST" id="register">
             <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h4>Create a new account</h4>
               <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
@@ -100,7 +101,7 @@
             <div class="container-fluid col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
               <div class="form-group">
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" id="username" class="form-control" required>
+                <input type="text" placeholder="Enter Username" name="username" id="username" class="form-control" data-validation="length alphanumeric" data-validation-length="min3" required>
               </div>
               <div class="form-group">
                 <label><b>E-mail</b></label>
@@ -108,14 +109,15 @@
               </div>
               <div class="form-group">
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="pwd" id="pwd" class="form-control" required>
+                <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" required>
               </div>
               <div class="form-group">
                 <label><b>Confirm password</b></label>
-                <input type="password" placeholder="Enter Password" name="c_pwd" id="c_pwd" class="form-control" required>
+                <input type="password" placeholder="Confirm Password" name="confirm_pwd" id="confirm_pwd" class="form-control" required>
               </div>
               <div class="form-group">
-                <button type="submit" class="login_btn btn btn-success gradient pull-right" name="submit" id="submit" value="Register">Submit</button>
+                <button type="submit" class="login_btn btn btn-success gradient pull-right" name="submit" id="submit" value="submit">Submit</button>
+                <button type="reset" value="reset" class="login_btn btn btn-warning gradient">Reset</button>
                 <button type="button" class="cancel_btn btn btn-danger gradient" onclick="document.getElementById('id02').style.display='none'">Cancel</button>
               </div>
             </div>
@@ -292,8 +294,12 @@
                 <small>© 2017 Demo website. Made by Madalina Rosca</small>
             </div>
         </div>
-        <div id="scroll_to_top" data-toggle="tooltip" data-placement="left" title="Scroll to top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
+        <div id="scroll_to_top" data-toggle="tooltip" data-placement="left" title="Scroll to top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div><!-- scroll to top button -->
+        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
     </div><!-- end main-wrapper -->
 </body>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/default.js"></script>
 </html>
