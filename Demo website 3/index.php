@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html"><img src="img/logo.gif" id="logo"></img></a>
+              <a class="navbar-brand" href="index.php"><img src="img/logo.gif" id="logo"></img></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
@@ -59,41 +59,14 @@
         <div id="id01" class="modal">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
         <!-- Modal Content -->
-        <form class="modal-content animate" action="login.php" autocomplete="off" method="POST" id="login">
-            <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
-            </div>
-            <div class="container-fluid col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
-              <div class="form-group">
-                <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" id="username" class="form-control" data-validation="length alphanumeric" data-validation-length="min3" required>
-              </div>
-              <div class="form-group">
-                <label><b>E-mail</b></label>
-                <input type="text" placeholder="Enter e-mail" name="email" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="login_btn btn btn-success gradient pull-right">Login</button>
-                <button type="button" class="cancel_btn btn btn-danger gradient" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
-              </div>
-              <div class="form-group">
-                <span><input type="checkbox" checked="checked"> Remember me</span>
-                <span class="pwd">Forgot <a href="#">password?</a></span>
-              </div>
-              <div><h4 class="register_link">Don't have an account? Click <a onclick="document.getElementById('id02').style.display='block', document.getElementById('id01').style.display='none'" href="#">HERE</a> to create one!</h4></div>
-            </div>
-        </form>
-        </div><!-- end Login modal -->
-        
-        <!-- Open Register Modal -->
-        <div id="id02" class="modal">
-          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">Close</span>
-        <!-- Modal Content -->
-        <form class="modal-content animate" autocomplete="off" action="register.php" method="POST" id="register">
+        <form class="modal-content animate" action="login.php" method="POST" id="login" role="form" data-toggle="validator">
+         <!-- confirmation/error message -->
+        <?php if(isset($smsg)){ ?><div class="alert alert-success alert-dismissable container-fluid col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12" role="alert"><b><?php echo $smsg; ?></b>
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div><?php } ?>
+        <?php if(isset($fmsg)){ ?><div class="alert alert-danger alert-dismissable container-fluid col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12" role="alert"><b><?php echo $fmsg; ?></b>
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div><?php } ?><!-- end confirmation/error message -->
             <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h4>Create a new account</h4>
               <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
@@ -101,19 +74,60 @@
             <div class="container-fluid col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
               <div class="form-group">
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" id="username" class="form-control" data-validation="length alphanumeric" data-validation-length="min3" required>
+                <input type="text" placeholder="Enter Username" name="username" id="username" class="form-control"  required>
+                <div class="help-block with-errors"></div>
               </div>
               <div class="form-group">
                 <label><b>E-mail</b></label>
-                <input type="text" placeholder="Enter e-mail" name="email" id="email" class="form-control" required>
+                <input type="email" placeholder="Enter e-mail" name="email" id="email" class="form-control" required>
+                <div class="help-block with-errors"></div>
               </div>
               <div class="form-group">
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" required>
+                <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" data-minlength="5" required>
+                <div class="help-block">Minimum 5 characters</div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="login_btn btn btn-success gradient pull-right" name="submit" id="submit" value="login">Login</button>
+                <button type="button" class="cancel_btn btn btn-danger gradient" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+              </div>
+              <div class="form-group">
+                <span><input type="checkbox" checked="checked"> Remember me</span>
+                <span class="pwd">Forgot <a href="#">password?</a></span>
+              </div>
+              <div><h4 class="register_link">Don't have an account? Click <a href="register.php">HERE</a> to create one!</h4></div>
+            </div>
+        </form>
+        </div><!-- end Login modal -->
+        
+        <!-- Open Register Modal -->
+        <!-- <div id="id02" class="modal">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">Close</span>
+        <!-- Modal Content -->
+        <!-- <form class="modal-content animate" action="register.php" method="POST" id="register" role="form" data-toggle="validator">
+            <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h4>Create a new account</h4>
+              <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container-fluid col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+              <div class="form-group">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" id="username" class="form-control" data-validation="length alphanumeric" data-minlength="5" required>
+              </div>
+              <div class="form-group">
+                <label><b>E-mail</b></label>
+                <input type="email" placeholder="Enter e-mail" name="email" id="email" class="form-control" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" data-minlength="5" required>
+                <div class="help-block">Minimum of 6 characters</div>
               </div>
               <div class="form-group">
                 <label><b>Confirm password</b></label>
-                <input type="password" placeholder="Confirm Password" name="confirm_pwd" id="confirm_pwd" class="form-control" required>
+                <input type="password" placeholder="Confirm Password" name="confirm_pwd" id="confirm_pwd" class="form-control" data-match="#password" data-match-error="Whoops, these don't match" required>
+                <div class="help-block with-errors"></div>
               </div>
               <div class="form-group">
                 <button type="submit" class="login_btn btn btn-success gradient pull-right" name="submit" id="submit" value="submit">Submit</button>
@@ -122,7 +136,7 @@
               </div>
             </div>
           </form>
-        </div><!-- end Register modal -->
+        </div> --><!-- end Register modal -->
         
         <div class="bg-overlay"><!-- start bg-overlay -->
             <div class="overlay-content animation-element slide-left introduction">
@@ -295,11 +309,12 @@
             </div>
         </div>
         <div id="scroll_to_top" data-toggle="tooltip" data-placement="left" title="Scroll to top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div><!-- scroll to top button -->
-        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
     </div><!-- end main-wrapper -->
 </body>
 <!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/default.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 </html>

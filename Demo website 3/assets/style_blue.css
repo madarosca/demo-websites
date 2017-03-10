@@ -855,14 +855,20 @@ a:focus {
 }
 /* end footer */
 
-/*login and register modal*/
+/*login and register*/
 .login_register {
   background-color: #f8f8f8;
 }
 
 .img_container {
   text-align: center;
-  padding: 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+#id02 .img_container {
+  text-align: center;
+  padding: 10px;
   width: 100%;
 }
 
@@ -878,6 +884,7 @@ span.pwd {
 .register_link {
   font-size: 14px;
   text-align: center;
+  font-weight: 800;
 }
 
 /* Change styles on small screens */
@@ -888,10 +895,8 @@ span.pwd {
   .modal {
     position: absolute !important;
   }
-  #id02 .img_container {
-    height: 30% !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+  #id02 .avatar {
+    width: 20% !important;
   }
   .form-group {
     margin-bottom: 10px !important;
@@ -900,8 +905,8 @@ span.pwd {
 
 @media screen and (max-width: 500px) {
   span.pwd {
-     display: block;
-     float: none;
+   display: block;
+   float: none;
   }
   .cancel_btn {
     width: 100%; 
@@ -919,14 +924,6 @@ span.pwd {
   .close{
     font-size: 16px !important;
     right: 10px !important;
-  }
-  #id02 .avatar {
-    width: 25%;
-  }
-  #id02 .img_container {
-    height: 20% !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
   }
   .form-group {
     margin-bottom: 10px!important;
@@ -950,21 +947,19 @@ span.pwd {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #e6f1fb !important;
+    background-color: #f3f3f3 !important;
     margin: 5px auto;
     border: 1px solid #888;
     width: 60%; 
     height: 520px;
 }
 
-#id02 .img_container {
-  height: 35%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+#id01 .avatar {
+  width: 13%;
 }
 
 #id02 .avatar {
-  width: 18%;
+  width: 10%;
 }
 
 /* The Close Button */
@@ -973,10 +968,9 @@ span.pwd {
     position: relative;
     right: 25px;
     top: 0; 
-    color: #063ad4;
-    font-size: 20px;
+    color: #000;
+    font-size: 20px !important;
     font-weight: bold;
-    opacity: 0.5 !important;
 }
 
 /* Close button on hover */
@@ -1011,7 +1005,7 @@ span.pwd {
   bottom: 0;
   width: 45px;
   height: 45px;
-  background-color: #84a4bc;
+  background-color: #9a9999;
   opacity: 0.7;
   box-shadow: -2px -2px 5px 0px #e2e2e2;
 }
@@ -1028,12 +1022,12 @@ span.pwd {
 }
 
 #scroll_to_top + .tooltip > .tooltip-inner {
-  background-color: #84a4bc;
+  background-color: #9a9999;
   opacity: 0.9;
 }
 
 #scroll_to_top + .tooltip.left > .tooltip-arrow {
-  border-left: 5px solid #84a4bc;
+  border-left: 5px solid #9a9999;
   opacity: 0.9;
 }
 
