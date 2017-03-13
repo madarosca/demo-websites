@@ -83,6 +83,12 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+var modal = document.getElementById('id02');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 //end modal hide on click
 
 //show/hide scroll to top button
@@ -103,3 +109,6 @@ $("a[href='#top']").click(function() {
   return false;
 });
 //end scroll to top effect
+$(document).ready(function(){
+    $('#scroll_to_top').tooltip({animation: true}); 
+});

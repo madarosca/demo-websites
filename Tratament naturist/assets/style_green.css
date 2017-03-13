@@ -134,7 +134,7 @@ a:hover, a:focus {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #000000 !important;
+  color: #000 !important;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
