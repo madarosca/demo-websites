@@ -40,7 +40,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html">Acasa</a></li>
                 <li><a href="cazuistica.html">Cazuistica</a></li>
-                <li><a href="#">Consulta specialistul</a></li>
+                <li><a href="consulta.php">Consulta specialistul</a></li>
                 <li><a onclick="document.getElementById('id01').style.display='block'" href="#">Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -63,7 +63,7 @@
             <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <button type="button" class="close" onclick="document.getElementById('id01').style.display='none'" data-dismiss="modal">&times;</button>
             <h4>Contact</h4>
-              <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+              <img src="img/logo1-a.png" alt="Tratament naturist" class="contact_logo">
             </div>
             <div class="container-fluid col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <div class="form-group">
@@ -95,6 +95,7 @@
               </div>
               <div class="form-group">
                 <button type="submit" class="trimite_btn btn btn-success gradient pull-right" name="submit" id="trimite" value="trimite">Trimite</button>
+                <button type="reset" value="reset" class="form_btn btn btn-warning gradient">Reset</button>
                 <button type="button" class="cancel_btn btn btn-danger gradient" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
               </div>
             </div>
@@ -126,9 +127,9 @@
         <div id="intro" class="col-md-offset-2 col-md-8 text-center">
             <h3 class="b-title">Tratament naturist</h3>
             <br>
-            <p class="g-txt-par">Tratamentele naturiste si remediile naturale au fost folosite de omenire inca din cele mai vechi timpuri in ameliorarea diferitelor afectiuni. Acest site prezinta studii de caz cu privire la diferite boli si tratamentele naturiste recomandate de catre cei mai buni medici specialisti. Sunt descrise pe larg cazurile pacientilor care au apelat la ajutorul tratamentelor naturiste in ameliorarea unor boli perecum cancer, accident vascular cerebral, diabet, afectiuni ale sistemului renal, dereglari ale sistemului endocrin etc. Fiecare caz in parte este prezentat de catre medicul specialist care s-a ocupat de pacientul respectiv, cuprinzand date relevante referitoare la stadiul in care pacientul s-a prezentat la medicul de medicina naturista, fiind oferite informatii cu privire la rezultatele analizelor de laborator efectuate pana la momentul respectiv. Cu acordul pacientilor sunt prezentate in detaliu rezultatele analizelor medicale de laborator efectuate inainte, in timpul si dupa efectuarea curelor cu tratamentele naturiste recomandate.</p>
-            <p class="g-txt-par">Aici veti gasi informatii detaliate referitoare la recomandarile specialistilor nostri de medicina naturista in ceea ce priveste produsele naturiste sau suplimentele alimentare recomandate ca adjuvant in tratarea diferitelor afectiuni. Aceste recomandari au drept suport folosirea celor mai eficiente tratamente naturiste cunoscute pana in prezent. Medicii nostri specialisti apeleaza la cele mai efieciente produse naturiste existente pe piata, recunoscute si avizate de organsimele de certificare din domeniul sanatatii.</p>
-            <p class="g-txt-par">Pentru ameliorarea efectelor bolilor cu care se confrunta omul in zilele noastre este importanta cunoasterea cauzelor declansatoare ale dezechilibrelor sanatatii. Aici veti gasi multiple sfaturi cu privire la imbunatatirea stilului de viata, al regimului alimentar care trebuie respectat atat in cazul diferitelor afectiuni, cat si pentru mentinerea si recapatarea starii de sanatate a organismului nostru.</p>
+            <p class="g-txt-par">Tratamentele naturiste si remediile naturale au fost folosite de omenire inca din cele mai vechi timpuri in ameliorarea diferitelor afectiuni. Acest site prezinta <a href="cazuistica.html" id="text_links">studii de caz</a> cu privire la diferite boli si tratamentele naturiste recomandate de catre cei mai buni medici specialisti. Sunt descrise pe larg cazurile pacientilor care au apelat la ajutorul tratamentelor naturiste in ameliorarea unor boli perecum cancer, accident vascular cerebral, diabet, afectiuni ale sistemului renal, dereglari ale sistemului endocrin etc. Fiecare caz in parte este prezentat de catre medicul specialist care s-a ocupat de pacientul respectiv, cuprinzand date relevante referitoare la stadiul in care pacientul s-a prezentat la medicul de medicina naturista, fiind oferite informatii cu privire la rezultatele analizelor de laborator efectuate pana la momentul respectiv. Cu acordul pacientilor sunt prezentate in detaliu rezultatele analizelor medicale de laborator efectuate inainte, in timpul si dupa efectuarea curelor cu tratamentele naturiste recomandate.</p>
+            <p class="g-txt-par">Aici veti gasi informatii detaliate referitoare la <a href="consulta.php" id="text_links">recomandarile specialistilor</a> nostri de medicina naturista in ceea ce priveste produsele naturiste sau suplimentele alimentare recomandate ca adjuvant in tratarea diferitelor afectiuni. Aceste recomandari au drept suport folosirea celor mai eficiente tratamente naturiste cunoscute pana in prezent. Medicii nostri specialisti apeleaza la cele mai efieciente produse naturiste existente pe piata, recunoscute si avizate de organsimele de certificare din domeniul sanatatii.</p>
+            <p class="g-txt-par">Pentru ameliorarea efectelor bolilor cu care se confrunta omul in zilele noastre este importanta cunoasterea cauzelor declansatoare ale dezechilibrelor sanatatii. Aici veti gasi multiple <a href="cazuistica.html" id="text_links">sfaturi</a> cu privire la imbunatatirea stilului de viata, al regimului alimentar care trebuie respectat atat in cazul diferitelor afectiuni, cat si pentru mentinerea si recapatarea starii de sanatate a organismului nostru.</p>
         </div>
         <div class="clearfix"></div>
         <div class="grey_bg">
@@ -143,15 +144,15 @@
                         <div class="box_image"><span class="glyphicon glyphicon-star"></span></div>
                         <div class="box_title">Descoperiri de ultima ora</div>
                         <div class="box_content">Cele mai recente descoperiri in domeniul tratamentelor naturiste si cele mai eficiente produse naturiste existente pot fi regasite in informatiile oferite aici.</div>
-                        <div class="box_link pull-right"><a href="cazuistica.html">Vezi cazuistica <span class="glyphicon glyphicon-arrow-right"></span></a></div>
+                        <div class="box_link pull-right"><a href="cazuistica.html">Vezi mai mult <span class="glyphicon glyphicon-arrow-right"></span></a></div>
                     </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12 animation-element slide-bottom" id="box_2">
                     <a href="#">
                         <div class="box_image"><span class="glyphicon glyphicon-apple"></span></div>
                         <div class="box_title">Sfaturi pentru sanatate</div>
-                        <div class="box_content">Aici veti descoperi sfaturi utile de echilibrare si mentinere a sananatii dumneavoastra si a familiei dumneavoastra.</div>
-                        <div class="box_link pull-right"><a href="cazuistica.html">Vezi cazuistica <span class="glyphicon glyphicon-arrow-right"></span></a></div>
+                        <div class="box_content">Aici veti descoperi sfaturi utile pentru a echilibra si a mentine sanatatea dumneavoastra si a familiei dumneavoastra.</div>
+                        <div class="box_link pull-right"><a href="cazuistica.html">Vezi mai mult <span class="glyphicon glyphicon-arrow-right"></span></a></div>
                     </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12 animation-element slide-top" id="box_3">
@@ -159,7 +160,7 @@
                         <div class="box_image"><span class="glyphicon glyphicon-user"></span></div>
                         <div class="box_title">Contacteaza specialistul</div>
                         <div class="box_content">Specialistii nostri va stau la dispozitie cu sfaturi si recomandari. Puteti solicita aceste sfaturi prin completarea formularului nostru.</div>
-                        <div class="box_link pull-right"><a href="consulta.html">Consulta specialistul <span class="glyphicon glyphicon-arrow-right"></span></a></div>
+                        <div class="box_link pull-right"><a href="consulta.php">Consulta specialistul <span class="glyphicon glyphicon-arrow-right"></span></a></div>
                     </a>
                     </div>
                 </div><!-- end boxes -->
@@ -168,8 +169,9 @@
         <div class="clearfix"></div>
         <div id="banner_section" class="col-lg-12 text-center">
             <div class="section_overlay">
-                <div class="big_icon col-lg-6 col-md-6 col-sm-6 col-xs-12"><a href="http://drrosca.flavonoide.ro"><img id="icon1" src="img/icon1.png"><p class="sec_text"></a>Lista completa si comenzi produse naturiste</p></div>
-                <div class="big_icon big_icon_last col-lg-6 col-md-6 col-sm-6 col-xs-12"><a href="http://drrosca.flavonoide.ro"><img id="icon4" src="img/icon4.png"></a><p class="sec_text">Acceseaza www.drrosca.flavonoide.ro</p></div>
+                <div class="big_icon col-lg-4 col-md-6 col-sm-6 col-xs-12"><a href="www.drrosca.flavonoide.ro" target="_blank"><img id="icon3" src="img/icon3.png"><p class="sec_text">www.drrosca.flavonoide.ro</p></a></div>
+                <div class="big_icon col-lg-4 col-md-6 col-sm-6 col-xs-12"><a href="www.flavonoide.ro" target="_blank"><img id="icon4" src="img/icon4.png"><p class="sec_text">www.flavonoide.ro</p></a></div>
+                <div class="big_icon col-lg-4 col-md-12 col-sm-12 col-xs-12"><a href="www.vitacrystal.flavonoide.ro" target="_blank"><img id="icon2" src="img/icon2.png"><p class="sec_text">www.vitacrystal.flavonoide.ro</p></a></div>
             </div>
         </div><!-- end banner_section -->
         <div class="clearfix"></div>
@@ -178,7 +180,6 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact_us">
                 <h5 class="footer_header"><i class="fa fa-address-card"></i>  Contact</h5>
                     <ul class="contact_list col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <li><i class="fa fa-map"></i> <span>Adresa:</span> 1200 some street, IL, US</li>
                         <li><i class="fa fa-phone-square"></i> <span>Telefon:</span>
                             <li>Vodafone: 0733.368.833</li>
                             <li>Orange: 0758.970.397</li>
@@ -187,6 +188,7 @@
                         </li>
                     </ul>
                     <ul class="contact_list col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <li><i class="fa fa-map"></i> <span>Adresa:</span> Campina</li>
                         <li><i class="fa fa-envelope"></i> <span>E-mail:</span> <a href="mailto:bionismedical@yahoo.com" class="a_social footer">bionismedical@yahoo.com</a></li>
                         <li><i class="fa fa-clock-o"></i> <span>Cand ne puteti contacta:</span>
                             <li>Luni-Sambata: 9:00 - 19:00 </li>
@@ -195,12 +197,12 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 social_media">
-                    <h5 class="footer_header"><i class="fa fa-globe"></i>  Site-uri partenere</h5>
+                    <h5 class="footer_header"><i class="fa fa-users"></i>  Site-uri partenere</h5>
                     <div class="social_links col-lg-12">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Dr. Rosca Dorian"><a href="http://drrosca.flavonoide.ro/" class="a_social"><i class="fa fa-globe"></i><br></a></div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Flavonoide"><a href="http://www.flavonoide.ro/" class="a_social"><i class="fa fa-twitter-square"></i></a></div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Vita Crystal"><a href="http://vitacrystal.flavonoide.ro/" class="a_social"><i class="fa fa-youtube-square"></i></a></div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="#" class="a_social"><i class="fa fa-facebook-square"></i></a></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Dr. Rosca Dorian"><a href="http://drrosca.flavonoide.ro/" class="a_social" target="_blank"><i class="fa fa-user-md"></i><br></a></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Flavonoide"><a href="http://www.flavonoide.ro/" class="a_social" target="_blank"><i class="fa fa-globe"></i></a></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Vita Crystal"><a href="http://vitacrystal.flavonoide.ro/" class="a_social" target="_blank"><i class="fa fa-heartbeat"></i></a></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="#" class="a_social" target="_blank"><i class="fa fa-facebook-square"></i></a></div>
                     </div>
                 </div>
             </div>
