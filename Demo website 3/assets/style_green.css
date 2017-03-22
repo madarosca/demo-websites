@@ -139,6 +139,7 @@ a:hover, a:focus {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1em;
+  font-weight: 600px !important;
 }
 
 .navbar-default .nav>li>a:focus, 
@@ -235,7 +236,7 @@ a:focus {
 }
 
 .overlay-content {
-  padding-top: 150px;
+  padding-top: 140px;
   padding-left: 10%;
   width: 100%;
   height: 100%;
@@ -1048,3 +1049,12 @@ span.pwd {
   }
 }
 /* End Scroll to top button */
+
+.help-block {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.form-group {
+  margin-bottom: 0px !important; 
+}

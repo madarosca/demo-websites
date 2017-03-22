@@ -37,6 +37,14 @@ $(document).ready(function(){
 });
 //end script for the arrow down
 
+//scroll down effect
+$("a[href='#intro']").click(function() {
+
+  $("html, body").animate({ scrollTop: 520 }, "slow");
+  return false;
+});
+//end scroll down effect
+
 //window animation on scroll
 var $animation_elements = $('.animation-element');
 var $window = $(window);
