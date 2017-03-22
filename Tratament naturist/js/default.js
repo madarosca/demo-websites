@@ -16,30 +16,6 @@
 // document.oncontextmenu=new Function("alert(message);return false");
 //end script for copyright
 
-//script to open styles options
-$(document).ready(function (e) {
-    $("#change_theme").click(
-      function() {
-          $("#color_themes").slideToggle(400);
-          $("#change_icon").toggleClass("glyphicon-arrow-down glyphicon-arrow-up");
-    });
-});
-//end script to open styles options
-
-//script to dinamically change the style
-$(document).ready(function () {
-    $("#style_green").click(function () {
-        $('head').append('<link rel="stylesheet" href="assets/style.css" type="text/css" />');
-    });
-    $("#style_blue").click(function () {
-        $('head').append('<link rel="stylesheet" href="assets/style_blue.css" type="text/css" />');
-    });
-    $("#style_red").click(function () {
-        $('head').append('<link rel="stylesheet" href="assets/style_red.css" type="text/css" />');
-    });
-});
-//end script to dinamically change the style
-
 //script for the arrow down
 $(document).ready(function(){
     $("#scroll-icon").hover(
