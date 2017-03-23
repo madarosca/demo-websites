@@ -83,7 +83,7 @@ a:hover, a:focus {
 #style_green {
   background-color: #006303;
   padding-top: 17px;
-  width: 50px;
+  width: 52px;
   height: 50px;
   display: inline-block;
   border-radius: 5px;
@@ -276,7 +276,7 @@ a:focus {
 
 .scroll {
   text-align: center;
-  padding: 30px 0 30px 0;
+  padding: 0px 0 10px 0;
 }
 
 #scroll-icon {
@@ -782,7 +782,7 @@ a:focus {
 /* footer */
 .footer {
   background-color: #111;
-  margin-top: 30px;
+  margin-top: 0;
   color: #777;
   padding-left: 0px !important;
   padding-right: 0px !important;

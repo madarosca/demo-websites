@@ -293,7 +293,7 @@ a:focus {
 
 .scroll {
   text-align: center;
-  padding: 30px 0 30px 0;
+  padding: 0px 0 10px 0;
 }
 
 #scroll-icon {
@@ -308,7 +308,7 @@ a:focus {
 
 #scroll-text {
   display: none;
-  color: #054601;
+  color: #066700;
   position: relative;
   text-align: center;
   padding-bottom: 30px;
@@ -316,6 +316,7 @@ a:focus {
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
+  text-shadow: 1px 1px 1px #6ea970;
 }
 
 .spacing-1 {
@@ -805,7 +806,7 @@ a:focus {
 /* footer */
 .footer {
   background-color: #001301;
-  margin-top: 30px;
+  margin-top: 0;
   color: #9e9e9e;
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -1017,7 +1018,7 @@ span.pwd {
   bottom: 0;
   width: 45px;
   height: 45px;
-  background-color: #9a9999;
+  background-color: #0cbf00 !important;
   opacity: 0.7;
   box-shadow: -2px -2px 5px 0px #e2e2e2;
 }
@@ -1034,12 +1035,12 @@ span.pwd {
 }
 
 #scroll_to_top + .tooltip > .tooltip-inner {
-  background-color: #9a9999;
+  background-color: #0cbf00 !important;
   opacity: 0.9;
 }
 
 #scroll_to_top + .tooltip.left > .tooltip-arrow {
-  border-left: 5px solid #9a9999;
+  border-left: 5px solid #0cbf00 !important;
   opacity: 0.9;
 }
 
