@@ -73,49 +73,10 @@ a:focus {
   opacity: 0.5;
 }
 
-@media (min-width: 768px) {
-  .navbar-nav {
-    float: right !important;
-    margin: 0;
-  }
-}
-
 .navbar-collapse {
   border-top: none !important;
   padding: 0 !important;
   overflow-x: hidden !important;
-}
-
-@media (max-width: 938px) {
-.navbar-collapse {
-  background: linear-gradient(to bottom, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%);
-  box-shadow: 0px 3px 10px rgba(24, 99, 0, 0.56) !important;
-  max-height: 600px !important;
-}
-.navbar-default .nav>li>a:focus, 
-.nav>li>a:hover,
-.nav>li>a:active {
-  background-color: transparent !important;
-  color: #fff !important;
-  text-decoration: none !important;
-  transition: all 1s ease 0s;
-  box-shadow: 0 3px 10px rgba(24, 99, 0, 0.19);
-  }
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #048202;
-  }
-.navbar-toggle {
-    box-shadow: 0 3px 10px #048202;
-  }
-.nav-container-fluid {
-  height: 50px;
-  }
-.navbar-brand {
-  width: 150px !important;
-  }
-#logo {
-  max-width: 60% !important;
-  }
 }
 
 .navbar-brand {
@@ -170,39 +131,6 @@ a:focus {
   position: fixed;
   z-index: 1000;
   transition: all .4s ease 0s;
-}
-
-@media (max-width: 768px) {
-  #sidebar-wrapper {
-    left: -165px !important;
-  }
-  .overlay-content {
-    padding-left: 12% !important;
-  }
-  .overlay-content1 {
-    padding-left: 12% !important;
-  }
-  .overlay-content2 {
-    padding-left: 12% !important;
-  }
-  .overlay-content-cases {
-    padding-left: 12% !important;
-  }
-  #intro {
-    padding-left: 50px !important;
-  }
-  .contact_us, .social_media {
-    left: 5%;
-  }
-  #consulta_specialistul {
-    left: 2%;
-  }
-  .section_overlay {
-    height: 530px !important;
-  }
-  #banner_section {
-    height: 530px !important;
-  }
 }
 
 .sidebar-nav {
@@ -268,12 +196,6 @@ a:focus {
   background: none !important;
 }
 
-#main_icon {
-  float: right;
-  padding-right: 15px;
-  padding-top: 20px;
-}
-
 .sub_icon {
   float: right;
   padding-right: 10px;
@@ -295,8 +217,6 @@ a:focus {
 .overlay-content {
   padding-top: 100px;
   padding-left: 18%;
-  width: 100%;
-  height: 100%;
 }
 
 .bg-overlay1 {
@@ -365,15 +285,6 @@ a:focus {
   padding-right: 5%;
   text-align: right;
   text-shadow: 2px -1px 1px #063500;
-}
-
-@media (max-width: 600px) {
-  .h-large {
-    font-size: 3.5em !important;
-  }
-  .h-subheading {
-    font-size: 1.8em !important;
-  }
 }
 
 .h-subheading {
@@ -517,15 +428,6 @@ a:focus {
   margin-right: 25px;
 }
 
-@media (max-width: 768px) {
-  #box_2, #box_3 {
-    margin-top: 20px;
-  }
-  #box_3 {
-    margin-bottom: 50px;
-  }
-}
-
 .box_image {
   font-size: 6em;
   color: #248207;
@@ -574,31 +476,6 @@ a:focus {
   color: #248207;
 }
 
-@media only screen and (max-width: 860px) {
-  #box_2, #box_3 {
-    margin-top: 40px;
-  }
-  .boxes {
-    padding-left: 20px !important;
-  }
-  #box_3 {
-    margin-bottom: 50px;
-  }
-  #what_we_do {
-    padding-bottom: 0px;
-  }
-  .box_title {
-    margin: 10px 0 20px 0;
-  }
-  .box_link {
-    padding-top: 10px;
-  }
-}
-
-#hide_me {
-  opacity:0;
-}
-
 #banner_section {
   background: url(../img/planet.jpg);
   position: relative;
@@ -614,7 +491,7 @@ a:focus {
 }
 
 .big_icon {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 #icon2, #icon3, #icon4 {
@@ -633,59 +510,6 @@ a:focus {
   text-transform: uppercase;
   text-shadow: -3px 1px 4px #111;
   letter-spacing: 2px;
-}
-
-#icon1, #icon2, #icon3, #icon4, #mobile_responsive {
-    -webkit-transition:all 1s;
-    -moz-transition:all 1s;
-    transition:all 1s
-}
-
-#icon1:hover,
-#icon2:hover,
-#icon3:hover,
-#icon4:hover,
-#mobile_responsive:hover {
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    transform:rotateY(180deg);
-    cursor: pointer;
-}
-
-#mobile_friendly {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.mobile_title {
-  color: #14b302;
-  font-size: 1.3em;
-  font-weight: 600;
-  padding-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-}
-
-.mobile_content {
-  font-size: 1em;
-  font-weight: 400;
-  padding-bottom: 40px;
-  letter-spacing: 1.5px;
-}
-
-#mobile_responsive {
-  max-width: 100%;
-  padding-bottom: 20px !important;
-}
-
-#mobile_hide {
-  border-radius: 50%;
-}
-
-#mobile_hide:hover {
-  box-shadow: 0px 0px 30px #a09d9d;
-  cursor: pointer;
-  transition: all 1s ease 0s;
 }
 
 #banner_section2 {
@@ -708,8 +532,26 @@ a:focus {
   letter-spacing: 2px;
 }
 
+#icon1, #icon2, #icon3, #icon4, #mobile_responsive {
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s
+}
+
+#icon1:hover,
+#icon2:hover,
+#icon3:hover,
+#icon4:hover,
+#mobile_responsive:hover {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+    cursor: pointer;
+}
+
 .big_icon2 {
   padding-top: 30px;
+  padding-left: 30px;
 }
 
 .img_cazuistica {
@@ -717,70 +559,8 @@ a:focus {
   max-height: 200px;
 }
 
-@media only screen and (max-width: 768px){
-  }
-  .big_icon {
-    padding-top: 15px;
-  }
-  .big_icon2 {
-    padding-top: 25px;
-  }
-}
-
-@media only screen and (max-width: 560px){
-  .big_icon_last2 {
-    margin-top: -140px;
-  }
-  .section_overlay2 {
-    height: 345px !important;
-  }
-  #banner_section2 {
-    height: 345px !important;
-  }
-  #consulta_specialistul {
-    left: 2%;
-  }
-}
-
-@media only screen and (max-width: 380px){
-  .h-large {
-    margin-top: 40px !important;
-  }
-  #banner_section {
-    height: 780px;
-  }
-  .section_overlay {
-    height: 780px;
-  }
-  .big_icon {
-    width: 100% !important;
-  }
-  .big_icon_last {
-    margin-top: 0px;
-  }
-  .big_icon2 {
-    width: 100% !important;
-  }
-  .big_icon_last2 {
-    margin-top: 0px;
-  }
-  .mobile_content, .mobile_title {
-    text-align: center;
-  }
-  .sec-header {
-    padding-bottom: 20px;
-  }
-  #mobile_responsive {
-    padding-bottom: 30px !important;
-    padding-left: 0px !important;
-  }
-  #mobile_hide {
-    display: none;
-  }
-
-  #consulta_specialistul {
-    left: 2%;
-  }
+#intro {
+  padding-left: 50px !important;
 }
 
 /*animation element sliding from left*/
@@ -871,27 +651,6 @@ a:focus {
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
-
-/*media queries for small devices*/
-@media screen and (max-width: 600px){
-  .animation-element.slide-left.introduction {
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-    padding-left: 40px;
-  }
-  .animation-element.slide-right.introduction {
-    width: 100%;
-    margin: 0px 0px 0px 20px;
-  }
-  .animation-element.slide-top.introduction {
-    width: 100%;
-    margin: 0px 0px 0px 20px;
-  }
-  .animation-element.slide-bottom.introduction {
-    width: 100%;
-    margin: 0px 0px 0px 20px;
-  }
-}
 /* content */
 
 /* footer */
@@ -953,7 +712,6 @@ a:focus {
 /* end footer */
 
 /*Contact Modal*/
-
 .img_container {
   text-align: center;
   padding: 10px;
@@ -971,81 +729,6 @@ a:focus {
 #raspuns_consulta {
   z-index: 10000;
   text-align: center;
-}
-
-/* Change styles on small screens */
-@media screen and (max-width: 1000px) {
-  .modal-content {
-    height: 450px !important;
-  }
-  .modal {
-    position: absolute !important;
-  }
-  .form-group {
-    margin-bottom: 10px !important;
-  }
-  #container-footer {
-    margin-bottom: 15px;
-  }
-  #sidebar-wrapper {
-    left: -165px !important;
-  }
-  .boxes {
-    padding-left: 50px !important;
-  }
-  #box_1, #box_2, #box_3 {
-    width: 100%;
-    margin: 0;
-    padding: 10px 10px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .section_overlay {
-    height: 400px;
-  }
-  #banner_section {
-    height: 400px;
-  }
-  #box_1, #box_2, #box_3 {
-    width: 80%;
-    margin: 0;
-    padding: 10px 10px;
-  }
-  #box_2, #box_3 {
-    margin-top: 40px;
-  }
-  .boxes {
-    left: 5%;
-  }
-  #box_3 {
-    margin-bottom: 50px;
-  }
-  #what_we_do {
-    padding-bottom: 0px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .form_btn {
-    width: 100%; 
-    margin-top: 5px !important;
-  }
-  .trimite_btn {
-    width: 100% !important; 
-  }
-  .modal-content {
-    height: 450px !important;
-  }
-  .modal {
-    position: absolute !important;
-  }
-  .form-group {
-    margin-bottom: 10px!important;
-  }
-  textarea.form-control {
-    height: 100px !important;
-  }
 }
 
 /* The Modal (background) */
@@ -1151,12 +834,6 @@ textarea {
 #scroll_to_top + .tooltip.left > .tooltip-arrow {
   border-left: 5px solid #43c766;
   opacity: 0.9;
-}
-
-@media screen and (max-width: 500px) {
-  #scroll_to_top + .tooltip {
-  display: none !important;
-  }
 }
 /* End Scroll to top button */
 

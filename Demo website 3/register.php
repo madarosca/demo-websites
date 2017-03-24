@@ -66,9 +66,12 @@ if(isset($_POST['submit']) && !empty($_POST)) {
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Menu 1</a></li>
-                <li><a href="#">Menu 2</a></li>
-                <li><a href="#">Menu 3</a></li>
+                <li><a href="http://tratamentnaturist.epizy.com" target="_blank">Demo website 1</a></li>
+                <li><a href="http://mydemo2.epizy.com" target="_blank">Demo website 2</a></li>
+                <li><a href="http://mydemo1.epizy.com" target="_blank">Demo website 3</a></li>
+                <li><a href="http://admin-panel.epizy.com" target="_blank">Demo Admin</a></li>
+                <li><a href="http://tickets-demo.epizy.com" target="_blank">Demo Tickets</a></li>
+                <li><a href="http://email-demo.epizy.com" target="_blank">Demo E-mail</a></li>
                 <li><a href="login.php">LOG IN</A></li>
               </ul>
             </div><!-- /.navbar-collapse -->

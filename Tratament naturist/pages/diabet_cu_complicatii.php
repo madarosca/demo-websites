@@ -7,12 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="description" content="Tratamentele naturiste si remediile naturale au fost folosite de omenire inca din cele mai vechi timpuri in ameliorarea diferitelor afectiuni">
-        <meta name="keywords" content="">
+        <meta name="description" content="Tratamentele naturiste si remediile naturale au fost folosite mereu pentru diverse afectiuni. Tratamentul naturist pentru diabet cu complicatii a functionat cu succes pentru pacientii nostri.">
+        <meta name="keywords" content="diabet cu complicatii, diabet, tratament naturist, tratament diabet, diabet tip II, tratament diabet tip II">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
         <!-- Styles -->
         <link href="../assets/style.css" type="text/css" rel="stylesheet">
+        <link href="../assets/responsive.css" type="text/css" rel="stylesheet">
         <link href="../assets/buttons.css" type="text/css" rel="stylesheet">
         <!-- Bootstrap -->
         <link href="../assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
