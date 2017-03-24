@@ -54,7 +54,7 @@ $thankYou="Multumim! Mesajul tau a fost trimis iar medicul specialist te va cont
             </ul>
         </li>
         <li ><a href="consulta.php">Consulta specialistul</a></li>
-        <li ><a onclick="document.getElementById('id01').style.display='block'" href="#">Contact</a></li>
+        <li ><a onclick="document.getElementById('id01').style.display='block'" href="#id01">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.nav-container-fluid -->
