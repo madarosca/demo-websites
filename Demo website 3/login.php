@@ -1,31 +1,26 @@
 <?php
 session_start();
-require_once(__DIR__ . "/classes/DBConnect.php");
+require_once(__DIR__ . "/classes/User.php");
 
 if(isset($_POST['submit'])) {
     if(isset($_POST) && !empty($_POST)) {
-        $username = mysqli_real_escape_string($connection, $_POST['username']);
-        $email = mysqli_real_escape_string($connection, $_POST['email']);
+        $username = htmlspecialchars($_POST['username']);
+        $email = htmlspecialchars($_POST['email']);
         $password = md5($_POST['password']);
 
-        $connection = new DBConnect;
         $params = array(
-            'username' => $username,
             'email' => $email,
             'password' => $password
         );
         
-        if ($connection->select($params)) {
-            $_SESSION['username'] = $username;
+        if ($user = User::find($params)) {
+            $_SESSION['username'] = $user->username;
             echo "<div class='alert alert-success' role='alert'>User Logged in successfully!</div>";
-            print_r('bla');
         }else{
             $fmsg = "Incorrect email or password!";
-            print_r('ce');
         }
         if(isset($_SESSION['username'])){
             $smsg =  "User already logged in!";
-            print_r('nu');
         }
         header("Location: home.php");
     }

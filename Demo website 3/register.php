@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once(__DIR__ . "/classes/DBConnect.php");
+require_once(__DIR__ . "/classes/User.php");
 
 if(isset($_POST['submit']) && !empty($_POST)) {
     // prevent sql injections/ clear user invalid inputs
@@ -20,8 +20,10 @@ if(isset($_POST['submit']) && !empty($_POST)) {
         'email' => $email,
         'password' => $password
     );
-    if ($connection->insert('users', $params)) {
-         $smsg = "Your account has been succesfully created! Please go to <a href=\"login.php\">LOGIN!</a>";
+
+
+    if ($id = User::insert($params)) {
+         $smsg = "{$id} Your account has been succesfully created! Please go to <a href=\"login.php\">LOGIN!</a>";
     }else{
         $fmsg =  "User registration failed!";
     }
