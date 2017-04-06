@@ -1,26 +1,31 @@
 <?php
 session_start();
-require_once(__DIR__ . "/classes/User.php");
+require_once(__DIR__ . "/classes/DBConnect.php");
 
 if(isset($_POST['submit'])) {
     if(isset($_POST) && !empty($_POST)) {
-        $username = htmlspecialchars($_POST['username']);
-        $email = htmlspecialchars($_POST['email']);
+        $username = mysqli_real_escape_string($connection, $_POST['username']);
+        $email = mysqli_real_escape_string($connection, $_POST['email']);
         $password = md5($_POST['password']);
 
+        $connection = new DBConnect;
         $params = array(
+            'username' => $username,
             'email' => $email,
             'password' => $password
         );
         
-        if ($user = User::find($params)) {
-            $_SESSION['username'] = $user->username;
+        if ($connection->select($params)) {
+            $_SESSION['username'] = $username;
             echo "<div class='alert alert-success' role='alert'>User Logged in successfully!</div>";
+            print_r('bla');
         }else{
             $fmsg = "Incorrect email or password!";
+            print_r('ce');
         }
         if(isset($_SESSION['username'])){
             $smsg =  "User already logged in!";
+            print_r('nu');
         }
         header("Location: home.php");
     }
@@ -46,6 +51,9 @@ if(isset($_POST['submit'])) {
     <link href="assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <!-- Font awesome -->
     <link href="assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="register-container main-wrapper">
@@ -114,9 +122,6 @@ if(isset($_POST['submit'])) {
         </div>
     </div><!-- end main-wrapper -->
 </body>
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/default.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>

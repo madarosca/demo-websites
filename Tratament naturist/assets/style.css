@@ -46,7 +46,10 @@ a:hover, a:focus {
 
 .navbar-default .nav>li>a:focus, 
 .nav>li>a:hover,
-.nav>li>a:active {
+.nav>li>a:active,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
   background-color: transparent !important;
   color: #daffd3 !important;
   text-decoration: none !important;
@@ -112,7 +115,10 @@ a:focus {
 
 .dropdown-menu>li>a:focus, 
 .dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:active {
+.dropdown-menu>li>a:active,
+.dropdown-menu>.active>a, 
+.dropdown-menu>.active>a:focus, 
+.dropdown-menu>.active>a:hover {
   background-color: transparent !important;
   color: #daffd3 !important;
   text-decoration: none !important;
@@ -173,7 +179,10 @@ a:focus {
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:hover,
-.sidebar-nav li a:focus {
+.sidebar-nav li a:focus,
+.sidebar-nav>.active>a,
+.sidebar-nav>.active>a:focus,
+.sidebar-nav>.active>a:hover {
   background-color: transparent !important;
   color: #daffd3 !important;
   text-decoration: none !important;
@@ -813,6 +822,7 @@ textarea {
   background-color: #43c766;
   opacity: 0.7;
   box-shadow: -2px -2px 5px 0px #e2e2e2;
+  z-index: 9000;
 }
 
 #scroll_to_top:hover {
@@ -844,3 +854,38 @@ textarea {
   padding-bottom: 50px; 
 }
 /* End Formular consulta specialistul */
+
+i + .tooltip > .tooltip-inner {
+  background-color: #0b4e00;
+  opacity: 0.9;
+  width: 80px;
+  text-align: center;
+}
+
+i + .tooltip.left > .tooltip-arrow {
+  border-left: 5px solid #0b4e00;
+  opacity: 0.9;
+}
+
+#par-green-bold {
+  color: green;
+  font-weight: 700;
+}
+
+#video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe {
+  width: 575px;
+  height: 375px;
+}
+
+#googleMap {
+  height: 160px;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once(__DIR__ . "/classes/User.php");
+require_once(__DIR__ . "/classes/DBConnect.php");
 
 if(isset($_POST['submit']) && !empty($_POST)) {
     // prevent sql injections/ clear user invalid inputs
@@ -20,10 +20,8 @@ if(isset($_POST['submit']) && !empty($_POST)) {
         'email' => $email,
         'password' => $password
     );
-
-
-    if ($id = User::insert($params)) {
-         $smsg = "{$id} Your account has been succesfully created! Please go to <a href=\"login.php\">LOGIN!</a>";
+    if ($connection->insert('users', $params)) {
+         $smsg = "Your account has been succesfully created! Please go to <a href=\"login.php\">LOGIN!</a>";
     }else{
         $fmsg =  "User registration failed!";
     }
@@ -49,6 +47,9 @@ if(isset($_POST['submit']) && !empty($_POST)) {
     <link href="assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <!-- Font awesome -->
     <link href="assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="register-container main-wrapper">
@@ -123,9 +124,6 @@ if(isset($_POST['submit']) && !empty($_POST)) {
         </div>
     </div><!-- end main-wrapper -->
 </body>
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/default.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>

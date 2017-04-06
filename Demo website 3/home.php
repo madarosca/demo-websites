@@ -26,6 +26,9 @@ if (!isset($_SESSION['username'])) {
     <link href="assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <!-- Font awesome -->
     <link href="assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="register-container main-wrapper">
@@ -108,17 +111,7 @@ if (!isset($_SESSION['username'])) {
       </div>
 </div>
 </body>
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/default.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-<script type="text/javascript">
-    $("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("active");
-    $("#main_icon").toggleClass("glyphicon-chevron-right glyphicon-chevron-left");
-});
-</script>
 </html>

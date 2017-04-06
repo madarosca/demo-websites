@@ -16,8 +16,15 @@
 // document.oncontextmenu=new Function("alert(message);return false");
 //end script for copyright
 
+//navbar active links
+var url = window.location;
+$('ul.nav a, ul.sidebar-nav a').filter(function() {
+    return this.href == url;
+}).parent().addClass('active');
+//end navbar active links
+
 //script for the arrow down
-$(document).ready(function(){
+$(document).ready(function() {
     $("#scroll-icon").hover(
         function() {
             $("#scroll-text").fadeIn("slow");
@@ -29,10 +36,11 @@ $(document).ready(function(){
 //end script for the arrow down
 
 //scroll down effect
-$("a[href='#intro']").click(function() {
-
-  $("html, body").animate({ scrollTop: 520 }, "slow");
-  return false;
+$(document).ready(function() {
+  $("a[href='#intro']").click(function() {
+    $("html, body").animate({ scrollTop: 520 }, "slow");
+    return false;
+  });
 });
 //end scroll down effect
 
@@ -75,18 +83,34 @@ $(window).bind('scroll', function(){
 //end show/hide scroll to top button
 
 //scroll to top effect
-$("a[href='#top']").click(function() {
-  event.preventDefault();
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
+$(document).ready(function() {
+  $("a[href='#top']").click(function() {
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
 });
 //end scroll to top effect
-$(document).ready(function(){
-    $('#scroll_to_top').tooltip({animation: true}); 
-});
 
 //tooltip activation
 $(document).ready(function() {
     $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+    $('#scroll_to_top').tooltip({animation: true}); 
 });
 //end tooltip activation
+
+//google map
+function myMap() {
+  var mapProp = {
+      center: new google.maps.LatLng(45.129642, 25.728338),
+      zoom:12
+  };
+  var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(45.129642, 25.728338),
+      icon: "../img/house.png",
+      animation:google.maps.Animation.BOUNCE
+  });
+  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+  marker.setMap(map);
+}
+//end google map

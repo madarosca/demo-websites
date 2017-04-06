@@ -31,6 +31,26 @@
   .overlay-content-cases {
     padding-left: 15% !important;
   }
+  .introduction {
+    padding-left: 15% !important;
+  }
+  .contact_logo {
+    display: none;
+  }
+  .modal-content {
+    height: 585px !important;
+  }
+  textarea.form-control {
+    height: 75px !important;
+  }
+  #video {
+    width: 265px;
+    height: 150px;
+  }
+  iframe {
+    width: 265px;
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -45,7 +65,7 @@
     width: 100% !important; 
   }
   .modal-content {
-    height: 450px !important;
+    height: 450px;
   }
   .modal {
     position: absolute !important;
@@ -54,7 +74,10 @@
     margin-bottom: 10px!important;
   }
   textarea.form-control {
-    height: 100px !important;
+    height: 100px;
+  }
+  .contact_logo {
+    display: none;
   }
 }
 
@@ -67,6 +90,9 @@
   }
   #consulta_specialistul {
     left: 4%;
+  }
+  .contact_logo {
+    display: none;
   }
 }
 
@@ -94,6 +120,9 @@
   .h-subheading {
     font-size: 1.8em !important;
   }
+  .contact_logo {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -101,13 +130,13 @@
     left: -165px !important;
   }
   .overlay-content {
-    padding-left: 12% !important;
+    padding-left: 12%;
   }
   .overlay-content1 {
-    padding-left: 12% !important;
+    padding-left: 12%;
   }
   .overlay-content2 {
-    padding-left: 12% !important;
+    padding-left: 12%;
   }
   .overlay-content-cases {
     padding-left: 12%;
@@ -132,6 +161,19 @@
   }
   .h-large {
     font-size: 4em;
+  }
+  .contact_logo {
+    display: none;
+  }
+  .modal-content {
+    height: 585px !important;
+  }
+  textarea.form-control {
+    height: 100px !important;
+  }
+  #googleMap {
+    left: 25px !important;
+    max-width: 95%;
   }
 }
 
@@ -190,7 +232,7 @@
 
 @media screen and (max-width: 1000px) {
   .modal-content {
-    height: 450px !important;
+    height: 450px;
   }
   .modal {
     position: absolute !important;
@@ -251,6 +293,9 @@
   #consulta_specialistul {
     left: 4%;
   }
+  #googleMap {
+  left: 50px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -273,6 +318,9 @@
   .overlay-content-cases {
     padding-left: 22% !important;
   }
+  .introduction {
+    padding-left: 22% !important;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -286,6 +334,9 @@
     padding-left: 18% !important;
   }
   .overlay-content-cases {
+    padding-left: 18% !important;
+  }
+  .introduction {
     padding-left: 18% !important;
   }
 }

@@ -53,8 +53,8 @@ $thankYou="Multumim! Mesajul tau a fost trimis iar medicul specialist te va cont
                 <li><a href="diabet_cu_complicatii.php"><i class="fa fa-wheelchair" aria-hidden="true"></i>&nbsp; Diabet cu complicatii</a></li>
             </ul>
         </li>
-        <li ><a href="consulta.php">Consulta specialistul</a></li>
-        <li ><a onclick="document.getElementById('id01').style.display='block'" href="#id01">Contact</a></li>
+        <li><a href="consulta.php">Consulta specialistul</a></li>
+        <li><a onclick="document.getElementById('id01').style.display='block'" href="#id01">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.nav-container-fluid -->
@@ -63,15 +63,15 @@ $thankYou="Multumim! Mesajul tau a fost trimis iar medicul specialist te va cont
 <!-- Sidebar -->
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav" id="sidebar" role="navigation">     
-      <li><a href="infarct_miocardic.php">Infarct miocardic<i class="sub_icon fa fa-heart" aria-hidden="true"></i></a></li>
-      <li><a href="hipertensiune.php">Hipertensiune<i class="sub_icon fa fa-line-chart" aria-hidden="true"></i></a></li>
-      <li><a href="litiaza_renala.php">Litiaza renala<i class="sub_icon fa fa-filter" aria-hidden="true"></i></a></li>
-      <li><a href="noduli_tiroidieni.php">Noduli tiroidieni<i class="sub_icon fa fa-stethoscope" aria-hidden="true"></i></a></li>
-      <li><a href="diabet_tip_II.php">Diabet tip II<i class="sub_icon fa fa-plus-square" aria-hidden="true"></i></a></li>
-      <li><a href="cancer_colorectal.php">Cancer colorectal<i class="sub_icon fa fa-exclamation-circle" aria-hidden="true"></i></a></li>
-      <li><a href="cancer_mamar.php">Cancer mamar<i class="sub_icon fa fa-female" aria-hidden="true"></i></a></li>
-      <li><a href="chist_cerebral.php">Chist cerebral<i class="sub_icon fa fa-universal-access" aria-hidden="true"></i></a></li>
-      <li><a href="diabet_cu_complicatii.php">Diabet cu complicatii<i class="sub_icon fa fa-wheelchair" aria-hidden="true"></i></a></li>
+      <li><a href="infarct_miocardic.php">Infarct miocardic<i class="sub_icon fa fa-heart" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Infarct miocardic"></i></a></li>
+      <li><a href="hipertensiune.php">Hipertensiune<i class="sub_icon fa fa-line-chart" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Hipertensiune"></i></a></li>
+      <li><a href="litiaza_renala.php">Litiaza renala<i class="sub_icon fa fa-filter" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Litiaza renala"></i></a></li>
+      <li><a href="noduli_tiroidieni.php">Noduli tiroidieni<i class="sub_icon fa fa-stethoscope" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Noduli tiroidieni"></i></a></li>
+      <li><a href="diabet_tip_II.php">Diabet tip II<i class="sub_icon fa fa-plus-square" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Diabet tip II"></i></a></li>
+      <li><a href="cancer_colorectal.php">Cancer colorectal<i class="sub_icon fa fa-exclamation-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Cancer colorectal"></i></a></li>
+      <li><a href="cancer_mamar.php">Cancer mamar<i class="sub_icon fa fa-female" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Cancer mamar"></i></a></li>
+      <li><a href="chist_cerebral.php">Chist cerebral<i class="sub_icon fa fa-universal-access" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Chist cerebral"></i></a></li>
+      <li><a href="diabet_cu_complicatii.php">Diabet cu complicatii<i class="sub_icon fa fa-wheelchair" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Diabet cu complicatii"></i></a></li>
     </ul>
 </div><!-- End Sidebar -->
 <div class="clearfix"></div>

@@ -17,6 +17,9 @@
         <link href="assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
         <!-- Font awesome -->
         <link href="assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+        <!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
     </head>
 <body>
     <div class="main-wrapper">
@@ -130,7 +133,7 @@
             <br>
             <p class="g-txt-par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
         </div>
-        <div id="presentation" class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10">
+        <div id="presentation" class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8">
         <img src="img/presentation.png" id="hide_me">
         </div>
         <div class="clearfix"></div>
@@ -232,6 +235,8 @@
             </div>
         </div><!-- end banner_section2 -->
         <div class="clearfix"></div>
+        <div id="googleMap" style="width:100%;height:300px;"></div>
+        <div class="clearfix"></div>
         <div class="footer col-lg-12">
             <div class="container-fluid">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 about_us">
@@ -263,6 +268,10 @@
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a href="#" class="a_social"><i class="fa fa-linkedin-square"></i></a></div>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a href="#" class="a_social"><i class="fa fa-youtube-square"></i></a></div>
                     </div>
+                    <br><br><br>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" id="follow">
+                        <iframe src="//www.facebook.com/plugins/follow?href=https%3A%2F%2Fwww.facebook.com%2Fmada.rosca&amp;layout=standard&amp;show_faces=true&amp;colorscheme=light&amp;width=200&amp;height=100" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:60px; color:#fff;" allowTransparency="true"></iframe>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 newsletter">
                 <h5 class="footer_header"><i class="fa fa-newspaper-o"></i> Newsletter</h5>
@@ -281,10 +290,8 @@
         <div id="scroll_to_top" data-toggle="tooltip" data-placement="left" title="Scroll to top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div><!-- scroll to top button -->
     </div><!-- end main-wrapper -->
 </body>
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/default.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_5vR2Hlo8OMgzGz9DFcd1wfRveo7MIt0&callback=myMap"></script>
 </html>
