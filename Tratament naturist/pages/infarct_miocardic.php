@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -15,17 +16,20 @@
         <link href="../assets/style.css" type="text/css" rel="stylesheet">
         <link href="../assets/responsive.css" type="text/css" rel="stylesheet">
         <link href="../assets/buttons.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <!-- Bootstrap -->
         <link href="../assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
         <!-- Font awesome -->
         <link href="../assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     </head>
-    <div class="main-wrapper row">
-        <?php include (__DIR__ .'/menus.php'); ?>
-        <div class="bg-overlay-cases"><!-- start bg-overlay -->
+<body>
+<?php include_once("../analyticstracking.php") ?>
+    <div class="main-wrapper">
+        <div class="bg-overlay-cases container-fluid"><!-- start bg-overlay -->
             <div class="overlay-content-cases introduction">
                 <h1 class="h-large animation-element slide-top">Tratamente naturiste</h1>
                 <a href="http://drrosca.flavonoide.ro/" class="btn btn-overlay animation-element slide-bottom" target="_blank">Afla  mai mult >></a>
@@ -46,7 +50,9 @@
                 </a>
             </div>
         </div><!-- end bg-overlay -->
+        <?php include (__DIR__ .'/menus.php'); ?>
         <div class="clearfix"></div>
+    <div class="row">
         <div class="spacing-1"></div>
         <div id="intro" class="col-md-offset-2 col-md-8 text-center">
             <h3 class="b-title">Tratament naturist infarct miocardic</h3>
@@ -55,8 +61,17 @@
                 <img src="../img/olimpiq-75.jpg" class="img_cazuistica">
                 <br>
                 <div>
+                    <!-- show large image modal -->
+                    <div id="modal-image" class="modal modal-content animate" tabindex="-1" role="dialog">
+                        <button type="button" id="close-button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img src="../img/cazuistica/Infarct miocardic 1.jpg" alt="Buletin analize" id="infarct1">
+                    </div><!-- end show large image modal -->
                     <p class="g-txt-par">Studiu de caz: <strong>TAMPONADA CARDIACA, INFARCT MIOCARDIC RECENT EXTINS, ANEVRISM GIGANT VS(30%-75%), TROMBOZA APICALA, INSUFICIENTA CARDIACA NYHA 4, HIPERTENSIUNE ARTERIALA ESENTIALA GRAD II ESH CLASA DE RISC FOARTE INALT, DISLIPIDEMIE, TUMORA PULMONARA STANGA EXULCERATA (25x23), COLECTIE PLEURALA BILATERAL, SINDROM ANEMIC</strong>: Femeie, în varsta de 66 ani, grupa sangvina AII, inaltime 167cm, greutate 79 kg, fumatoare inraita.</p>
                     <p class="g-txt-par">In data de <strong>19.11.2012</strong>, pacienta cu un <strong>infarct miocardic sss</strong>facut în septembrie 2012 si o stare extrem de grava, cf analizelor si diagnosticelor prezentate in biletul de externare, solicita un tratament naturist. La momentul respectiv, starea fizica era degradata, necesitand interventia salvarii din 3 în 3 zile, avand tahicardii si dificultati respiratorii severe.</p>
+                    <div class="thumbs">
+                        <img src="../img/cazuistica/Infarct miocardic 1-thumb.jpg" alt="Buletin analize">
+                    </div>
+                    <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modal-image">Vezi imaginea</button>
                     <p class="g-txt-par">Din cele 10 diagnostice, prezente la externare, in afara de gravitatea fiecaruia am subliniat 2 aspecte care arata degradarea extrema a functiei cardiace (fara posibilitate de recuperare, in mod obisnuit) si anume:</p>
                     <p class="g-txt-par">- un anevrism apical ce ocupa <strong>75% (3/4)</strong> din volumul VS</p>
                     <p class="g-txt-par">- fractia de ejectie <strong>(Fej) = 10%</strong> (functia pompei cardiace) - <strong>(normal intre 65%-75%)</strong></p>
@@ -103,6 +118,7 @@
         <div class="clearfix"></div>
         <div class="spacing-1"></div>
         <?php include (__DIR__ .'/footer.php'); ?>
+    </div>
     </div><!-- end main-wrapper -->
 </body>
     <script src="../js/default.js"></script>

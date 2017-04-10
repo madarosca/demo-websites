@@ -16,6 +16,16 @@ a:hover, a:focus {
 }
 
 /* top-navbar */
+.affix {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.affix + .container-fluid {
+  padding-top: 50px;
+}
+
 .navbar {
   margin-bottom: 0 !important;
   border: none !important;
@@ -130,12 +140,12 @@ a:focus {
 
 /* sidebar */
 #sidebar-wrapper {
-  top: 130px;
   left: 0;
+  top: 65px;
   width: 200px;
   background: linear-gradient(to bottom, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%);;
   position: fixed;
-  z-index: 1000;
+  z-index: 1500;
   transition: all .4s ease 0s;
 }
 
@@ -215,16 +225,16 @@ a:focus {
 
 /* content */
 .bg-overlay {
-    background: url(../img/green_header.jpg);
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
+  background: url(../img/green_header.jpg);
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .overlay-content {
-  padding-top: 100px;
+  padding-top: 30px;
   padding-left: 18%;
 }
 
@@ -238,7 +248,7 @@ a:focus {
 }
 
 .overlay-content1 {
-  padding-top: 100px;
+  padding-top: 30px;
   padding-left: 18%;
   width: 100%;
   height: 100%;
@@ -254,7 +264,7 @@ a:focus {
 }
 
 .overlay-content2 {
-  padding-top: 100px;
+  padding-top: 30px;
   padding-left: 18%;
   width: 100%;
   height: 100%;
@@ -270,7 +280,7 @@ a:focus {
 }
 
 .overlay-content-cases {
-  padding-top: 100px;
+  padding-top: 30px;
   padding-left: 18%;
   width: 100%;
   height: 100%;
@@ -288,7 +298,7 @@ a:focus {
 }
 
 .intro_contact {
-  color: #d9ffd4;
+  color: #69e858;
   padding-left: 10%;
   font-weight: 800;
   padding-right: 5%;
@@ -334,7 +344,7 @@ a:focus {
 
 #scroll-icon {
   font-size: 30px;
-  color: #247902;
+  color: #33b500;
   margin-top: 10px;
 }
 
@@ -748,7 +758,7 @@ a:focus {
     left: 0;
     top: 0;
     width: 100%; 
-    height: 650px; 
+    height: 100%; 
     overflow: auto;
     background-color: rgb(0,0,0); 
     background-color: rgba(0, 0, 0, 0.68);
@@ -872,6 +882,7 @@ i + .tooltip.left > .tooltip-arrow {
   font-weight: 700;
 }
 
+/*iframe for youtube*/
 #video {
   display: block;
   margin-left: auto;
@@ -883,9 +894,23 @@ iframe {
   height: 375px;
 }
 
+/*google maps*/
 #googleMap {
   height: 160px;
   margin-top: 15px;
   padding-left: 10px;
 }
 
+/*modals for large images*/
+#infarct1 {
+  max-width: 700px !important;
+}
+
+#modal-image {
+  height: 100%;
+  padding-top: 0;
+}
+
+#close-button {
+  padding-right: 5px;
+}

@@ -32,7 +32,7 @@ $thankYou="Multumim! Mesajul tau a fost trimis iar medicul specialist te va cont
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="description" content="Tratamentele naturiste si remediile naturale au fost folosite de omenire inca din cele mai vechi timpuri in ameliorarea diferitelor afectiuni">
         <meta name="keywords" content="cancer, tratament, naturist, tratament naturist, boli, regim, nutritie, dieta, infarct, hipertensiune, diabet, litiaza, noduli, diabet tip II, colorectal, mamar, cancer mamar, chist, chist cerebral, cerebral, diabet cu complicatii, pastile, pastile naturiste, tratament cancer, tratament diabet, tratament boli, tratare, natural">
-        <meta name="google-site-verification" content="FJdw4RlBtZi9yaOWVXgELgHRFBywebakiU0wGAkl050" />
+        <meta name="google-site-verification" content="FJdw4RlBtZi9yaOWVXgELgHRFBywebakiU0wGAkl050"/>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
         <!-- Styles -->
@@ -46,11 +46,94 @@ $thankYou="Multumim! Mesajul tau a fost trimis iar medicul specialist te va cont
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-96999777-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6500010419654373",
+            enable_page_level_ads: true
+          });
+        </script>
     </head>
 <body>
-    <div class="main-wrapper row">
+<?php include_once("analyticstracking.php") ?>
+    <div class="main-wrapper">
+        <!-- Open Contact Modal -->
+        <div id="id01" class="modal">
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="#" method="POST" id="contact" role="form" data-toggle="validator">
+            <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <button type="button" class="close" onclick="document.getElementById('id01').style.display='none'" data-dismiss="modal">&times;</button>
+            <h4>Contact</h4>
+              <img src="img/logo1-a.png" alt="Tratament naturist" class="contact_logo">
+            </div>
+            <div class="container-fluid col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label><b>Nume</b></label>
+                <input type="text" placeholder="Numele tau" name="name" id="name" class="form-control" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label><b>E-mail</b></label>
+                <input type="email" placeholder="Adresa e-mail" name="email" id="email" class="form-control" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label><b>Telefon</b></label>
+                <input type="text" placeholder="Numar de telefon" name="telefon" id="telefon" class="form-control" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label><b>Subiect</b></label>
+                <input type="text" placeholder="Subiectul mesajului" name="subiect" id="subiect" class="form-control" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="container-fluid col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label><b>Mesaj</b></label>
+                <textarea class="form-control" rows="11" name="mesaj" id="mesaj" placeholder="Mesajul tau" required></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="trimite_btn btn btn-success gradient pull-right" name="trimite" id="trimite" value="trimite">Trimite</button>
+                <button type="button" class="form_btn btn btn-danger gradient" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+                <button type="reset" value="reset" class="form_btn btn btn-warning gradient">Reset</button>
+              </div>
+            </div>
+        </form>
+        </div><!-- end Contact modal -->
+        <div class="clearfix"></div>
+        <div class="bg-overlay container-fluid"><!-- start bg-overlay -->
+            <div class="overlay-content introduction">
+                <h1 class="h-large animation-element slide-top">Tratamente naturiste</h1>
+                <a href="http://drrosca.flavonoide.ro/" class="btn btn-overlay animation-element slide-bottom" target="_blank">Afla  mai mult >></a>
+            </div>
+        <div class="clearfix"></div>
+        <div class="intro_contact pull-right">
+            <h4 class="animation-element slide-left">Vodafone: 0733.368.833</h4>
+            <h4 class="animation-element slide-right">Orange: 0758.970.397</h4>
+            <h4 class="animation-element slide-left">Cosmote: 0768.246.224</h4>
+            <h4 class="animation-element slide-right">RDS: 0770.329.208</h4>
+        </div>
+        <div class="clearfix"></div>
+        <div class="scroll">
+            <a href="#intro">
+                <span id="scroll-text">mai mult</span>
+                <br>
+                <span id="scroll-icon" class="glyphicon glyphicon-circle-arrow-down"></span>
+            </a>
+        </div>
+        </div><!-- end bg-overlay -->
         <!-- navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="top">
+        <nav class="navbar navbar-default" role="navigation" id="top" data-spy="affix" data-offset-top="450">
           <div class="nav-container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -108,74 +191,7 @@ $thankYou="Multumim! Mesajul tau a fost trimis iar medicul specialist te va cont
             </ul>
         </div><!-- End Sidebar -->
         <div class="clearfix"></div>
-        <!-- Open Contact Modal -->
-        <div id="id01" class="modal">
-        <!-- Modal Content -->
-        <form class="modal-content animate" action="#" method="POST" id="contact" role="form" data-toggle="validator">
-            <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <button type="button" class="close" onclick="document.getElementById('id01').style.display='none'" data-dismiss="modal">&times;</button>
-            <h4>Contact</h4>
-              <img src="img/logo1-a.png" alt="Tratament naturist" class="contact_logo">
-            </div>
-            <div class="container-fluid col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="form-group">
-                <label><b>Nume</b></label>
-                <input type="text" placeholder="Numele tau" name="name" id="name" class="form-control" required>
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group">
-                <label><b>E-mail</b></label>
-                <input type="email" placeholder="Adresa e-mail" name="email" id="email" class="form-control" required>
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group">
-                <label><b>Telefon</b></label>
-                <input type="text" placeholder="Numar de telefon" name="telefon" id="telefon" class="form-control" required>
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group">
-                <label><b>Subiect</b></label>
-                <input type="text" placeholder="Subiectul mesajului" name="subiect" id="subiect" class="form-control" required>
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-            <div class="container-fluid col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="form-group">
-                <label><b>Mesaj</b></label>
-                <textarea class="form-control" rows="11" name="mesaj" id="mesaj" placeholder="Mesajul tau" required></textarea>
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="trimite_btn btn btn-success gradient pull-right" name="trimite" id="trimite" value="trimite">Trimite</button>
-                <button type="button" class="form_btn btn btn-danger gradient" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
-                <button type="reset" value="reset" class="form_btn btn btn-warning gradient">Reset</button>
-              </div>
-            </div>
-        </form>
-        </div><!-- end Contact modal -->
-        <div class="clearfix"></div>
-        <div class="bg-overlay"><!-- start bg-overlay -->
-            <div class="overlay-content introduction">
-                <h1 class="h-large animation-element slide-top">Tratamente naturiste</h1>
-                <a href="http://drrosca.flavonoide.ro/" class="btn btn-overlay animation-element slide-bottom" target="_blank">Afla  mai mult >></a>
-            </div>
-        <div class="clearfix"></div>
-        <div class="intro_contact pull-right">
-            <h4 class="animation-element slide-left">Vodafone: 0733.368.833</h4>
-            <h4 class="animation-element slide-right">Orange: 0758.970.397</h4>
-            <h4 class="animation-element slide-left">Cosmote: 0768.246.224</h4>
-            <h4 class="animation-element slide-right">RDS: 0770.329.208</h4>
-        </div>
-        <div class="clearfix"></div>
-        <div class="scroll">
-            <a href="#intro">
-                <span id="scroll-text">mai mult</span>
-                <br>
-                <span id="scroll-icon" class="glyphicon glyphicon-circle-arrow-down"></span>
-            </a>
-        </div>
-        </div><!-- end bg-overlay -->
-        <div class="clearfix"></div>
+    <div class="row">
         <div class="spacing-1"></div>
         <div class="container-fluid">
         <div id="intro" class="col-md-offset-3 col-md-8 text-center">
@@ -223,6 +239,7 @@ $thankYou="Multumim! Mesajul tau a fost trimis iar medicul specialist te va cont
         </div><!-- end grey_bg -->
         <div class="clearfix"></div>
         <?php include (__DIR__ .'/pages/footer.php'); ?>
+        </div>
     </div><!-- end main-wrapper -->
 </body>
     <script src="js/default.js"></script>

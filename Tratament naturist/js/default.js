@@ -99,6 +99,16 @@ $(document).ready(function() {
 });
 //end tooltip activation
 
+// Modal hide on window click
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+//end modal hide on clicks
+
 //google map
 function myMap() {
   var mapProp = {

@@ -21,8 +21,54 @@ mail($to,$email_subject,$email_body,$headers);
 $thankYou="Multumim! Mesajul tau a fost trimis iar medicul specialist te va contacta in curand.";
 }
 ?>
+<!-- Open Contact Modal -->
+<div id="id01" class="modal">
+<!-- Modal Content -->
+<form class="modal-content animate" action="#" method="POST" id="contact" role="form" data-toggle="validator">
+    <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <button type="button" class="close" onclick="document.getElementById('id01').style.display='none'" data-dismiss="modal">&times;</button>
+    <h4>Contact</h4>
+      <img src="../img/logo1-a.png" alt="Tratament naturist" class="contact_logo">
+    </div>
+    <div class="container-fluid col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="form-group">
+        <label><b>Nume</b></label>
+        <input type="text" placeholder="Numele tau" name="name" id="name" class="form-control" required>
+        <div class="help-block with-errors"></div>
+      </div>
+      <div class="form-group">
+        <label><b>E-mail</b></label>
+        <input type="email" placeholder="Adresa e-mail" name="email" id="email" class="form-control" required>
+        <div class="help-block with-errors"></div>
+      </div>
+      <div class="form-group">
+        <label><b>Telefon</b></label>
+        <input type="text" placeholder="Numar de telefon" name="telefon" id="telefon" class="form-control" required>
+        <div class="help-block with-errors"></div>
+      </div>
+      <div class="form-group">
+        <label><b>Subiect</b></label>
+        <input type="text" placeholder="Subiectul mesajului" name="subiect" id="subiect" class="form-control" required>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+    <div class="container-fluid col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="form-group">
+        <label><b>Mesaj</b></label>
+        <textarea class="form-control" rows="11" name="mesaj" id="mesaj" placeholder="Mesajul tau" required></textarea>
+        <div class="help-block with-errors"></div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="trimite_btn btn btn-success gradient pull-right" name="trimite" id="trimite" value="trimite">Trimite</button>
+        <button type="button" class="form_btn btn btn-danger gradient" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+        <button type="reset" value="reset" class="form_btn btn btn-warning gradient">Reset</button>
+      </div>
+    </div>
+</form>
+</div><!-- end Contact modal -->
+<div class="clearfix"></div>
 <!-- navbar -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="top">
+<nav class="navbar navbar-default" role="navigation" id="top" data-spy="affix" data-offset-top="450">
   <div class="nav-container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -80,49 +126,3 @@ $thankYou="Multumim! Mesajul tau a fost trimis iar medicul specialist te va cont
       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   </div>
 <?php } ?>
-<!-- Open Contact Modal -->
-<div id="id01" class="modal">
-<!-- Modal Content -->
-<form class="modal-content animate" action="#" method="POST" id="contact" role="form" data-toggle="validator">
-    <div class="img_container col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <button type="button" class="close" onclick="document.getElementById('id01').style.display='none'" data-dismiss="modal">&times;</button>
-    <h4>Contact</h4>
-      <img src="../img/logo1-a.png" alt="Tratament naturist" class="contact_logo">
-    </div>
-    <div class="container-fluid col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="form-group">
-        <label><b>Nume</b></label>
-        <input type="text" placeholder="Numele tau" name="name" id="name" class="form-control" required>
-        <div class="help-block with-errors"></div>
-      </div>
-      <div class="form-group">
-        <label><b>E-mail</b></label>
-        <input type="email" placeholder="Adresa e-mail" name="email" id="email" class="form-control" required>
-        <div class="help-block with-errors"></div>
-      </div>
-      <div class="form-group">
-        <label><b>Telefon</b></label>
-        <input type="text" placeholder="Numar de telefon" name="telefon" id="telefon" class="form-control" required>
-        <div class="help-block with-errors"></div>
-      </div>
-      <div class="form-group">
-        <label><b>Subiect</b></label>
-        <input type="text" placeholder="Subiectul mesajului" name="subiect" id="subiect" class="form-control" required>
-        <div class="help-block with-errors"></div>
-      </div>
-    </div>
-    <div class="container-fluid col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="form-group">
-        <label><b>Mesaj</b></label>
-        <textarea class="form-control" rows="11" name="mesaj" id="mesaj" placeholder="Mesajul tau" required></textarea>
-        <div class="help-block with-errors"></div>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="trimite_btn btn btn-success gradient pull-right" name="trimite" id="trimite" value="trimite">Trimite</button>
-        <button type="button" class="form_btn btn btn-danger gradient" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
-        <button type="reset" value="reset" class="form_btn btn btn-warning gradient">Reset</button>
-      </div>
-    </div>
-</form>
-</div><!-- end Contact modal -->
-<div class="clearfix"></div>

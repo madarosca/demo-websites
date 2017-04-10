@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -24,9 +25,9 @@
         <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     </head>
 <body>
-    <div class="main-wrapper row">
-        <?php include (__DIR__ .'/menus.php'); ?>
-        <div class="bg-overlay2"><!-- start bg-overlay -->
+<?php include_once("../analyticstracking.php") ?>
+    <div class="main-wrapper">
+        <div class="bg-overlay2 container-fluid"><!-- start bg-overlay -->
             <div class="overlay-content2 introduction">
                 <h1 class="h-large animation-element slide-top">Tratamente naturiste</h1>
                 <a href="http://drrosca.flavonoide.ro/" class="btn btn-overlay animation-element slide-bottom" target="_blank">Afla  mai mult >></a>
@@ -47,7 +48,9 @@
                 </a>
             </div>
         </div><!-- end bg-overlay -->
+        <?php include (__DIR__ .'/menus.php'); ?>
         <div class="clearfix"></div>
+    <div class="row">
         <br>
         <div id="intro2" class="container-fluid">
             <h3 class="b-title text-center">Consulta specialistul</h3>
@@ -108,6 +111,7 @@
         </div><!-- End Formular consulta specialistul-->
         <div class="clearfix"></div>
         <?php include (__DIR__ .'/footer.php'); ?>
+    </div>
     </div><!-- end main-wrapper -->
 </body>
     <script src="../js/default.js"></script>

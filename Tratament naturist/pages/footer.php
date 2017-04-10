@@ -1,15 +1,14 @@
+
 <!-- Banner section -->
 <div id="banner_section" class="col-lg-12 text-center">
     <div class="section_overlay">
         <div class="row col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-2">
             <div class="big_icon col-lg-4 col-md-6 col-sm-6 col-xs-12"><a href="http://www.drrosca.flavonoide.ro" target="_blank"><img id="icon3" src="../img/icon3.png"><p class="sec_text">drrosca.flavonoide.ro</p></a></div>
             <div class="big_icon col-lg-4 col-md-6 col-sm-6 col-xs-12"><a href="http://www.flavonoide.ro" target="_blank"><img id="icon4" src="../img/icon4.png"><p class="sec_text">flavonoide.ro</p></a></div>
-            <div class="big_icon col-lg-4 col-md-12 col-sm-12 col-xs-12"><a href="http://www.vitacrystal.flavonoide.ro" target="_blank"><img id="icon2" src="../img/icon2.png"><p class="sec_text">vitacrystal.flavonoide.ro</p></a></div>
+            <div class="big_icon col-lg-4 col-md-12 col-sm-12 col-xs-12"><a href="http://www.vitacrystal.flavonoide.ro" target="_blank"><img id="icon2" src="../img/icon2.png"><p class="sec_text">flavin-aloevera.ro</p></a></div>
         </div>
     </div>
 </div><!-- end banner_section -->
-<div class="clearfix"></div>
-
 <div class="clearfix"></div>
 <!-- Footer -->
 <div class="footer col-lg-12">
@@ -41,8 +40,8 @@
             <div class="social_links col-lg-12">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Dr. Rosca Dorian"><a href="http://drrosca.flavonoide.ro/" class="a_social" target="_blank"><i class="fa fa-user-md"></i><br></a></div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Flavonoide"><a href="http://www.flavonoide.ro/" class="a_social" target="_blank"><i class="fa fa-globe"></i></a></div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Vita Crystal"><a href="http://vitacrystal.flavonoide.ro/" class="a_social" target="_blank"><i class="fa fa-heartbeat"></i></a></div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="#" class="a_social" target="_blank"><i class="fa fa-facebook-square"></i></a></div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Vita Crystal"><a href="http://vitacrystal.flavonoide.ro/" class="a_social" target="_blank"><i class="fa fa-adn"></i></a></div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-toggle="tooltip" data-placement="bottom" title="Flavin Aloevera"><a href="http://www.flavin-aloevera.ro/" class="a_social" target="_blank"><i class="fa fa-heartbeat"></i></a></div>
             </div>
         </div>
     </div>
